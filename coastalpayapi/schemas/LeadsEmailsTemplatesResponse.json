@@ -1,0 +1,14 @@
+{
+  "id": "LeadsEmailsTemplatesResponse",
+  "title": "LeadsEmailsTemplatesResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "BriefEmailTemplate.json"
+      }
+    }
+  }
+}

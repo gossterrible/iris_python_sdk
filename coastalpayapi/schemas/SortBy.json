@@ -1,0 +1,33 @@
+{
+  "title": "SortBy",
+  "x-enum-elements": [
+    {
+      "name": "id",
+      "description": ""
+    },
+    {
+      "name": "mid",
+      "description": ""
+    },
+    {
+      "name": "name",
+      "description": ""
+    },
+    {
+      "name": "created",
+      "description": ""
+    },
+    {
+      "name": "modified",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "id",
+    "mid",
+    "name",
+    "created",
+    "modified"
+  ]
+}

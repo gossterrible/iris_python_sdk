@@ -1,0 +1,19 @@
+{
+  "title": "Type2",
+  "example": "tab",
+  "x-enum-elements": [
+    {
+      "name": "tab",
+      "description": ""
+    },
+    {
+      "name": "set",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "tab",
+    "set"
+  ]
+}

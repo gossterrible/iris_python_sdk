@@ -1,0 +1,225 @@
+{
+  "title": "Special",
+  "description": "Field special value",
+  "example": "dba",
+  "x-enum-elements": [
+    {
+      "name": "mid",
+      "description": ""
+    },
+    {
+      "name": "dba",
+      "description": ""
+    },
+    {
+      "name": "sales_number",
+      "description": ""
+    },
+    {
+      "name": "busaddress",
+      "description": ""
+    },
+    {
+      "name": "buscity",
+      "description": ""
+    },
+    {
+      "name": "busstate",
+      "description": ""
+    },
+    {
+      "name": "buszipcode",
+      "description": ""
+    },
+    {
+      "name": "bustype",
+      "description": ""
+    },
+    {
+      "name": "busproducts",
+      "description": ""
+    },
+    {
+      "name": "busmarkettype",
+      "description": ""
+    },
+    {
+      "name": "busstartdate",
+      "description": ""
+    },
+    {
+      "name": "sic",
+      "description": ""
+    },
+    {
+      "name": "taxid",
+      "description": ""
+    },
+    {
+      "name": "processor",
+      "description": ""
+    },
+    {
+      "name": "owner_fname",
+      "description": ""
+    },
+    {
+      "name": "owner_lname",
+      "description": ""
+    },
+    {
+      "name": "owner_title",
+      "description": ""
+    },
+    {
+      "name": "owner_ssn",
+      "description": ""
+    },
+    {
+      "name": "phone",
+      "description": ""
+    },
+    {
+      "name": "cellphone",
+      "description": ""
+    },
+    {
+      "name": "email",
+      "description": ""
+    },
+    {
+      "name": "contact",
+      "description": ""
+    },
+    {
+      "name": "contact_1",
+      "description": ""
+    },
+    {
+      "name": "contact_2",
+      "description": ""
+    },
+    {
+      "name": "avgtckt",
+      "description": ""
+    },
+    {
+      "name": "volume",
+      "description": ""
+    },
+    {
+      "name": "bank_name_on_account",
+      "description": ""
+    },
+    {
+      "name": "bank_account_type",
+      "description": ""
+    },
+    {
+      "name": "bank_account_owner_type",
+      "description": ""
+    },
+    {
+      "name": "aba_code",
+      "description": ""
+    },
+    {
+      "name": "account_number",
+      "description": ""
+    },
+    {
+      "name": "bank_name",
+      "description": ""
+    },
+    {
+      "name": "bank_city",
+      "description": ""
+    },
+    {
+      "name": "bank_state",
+      "description": ""
+    },
+    {
+      "name": "bank_zip",
+      "description": ""
+    },
+    {
+      "name": "LMS_FScore",
+      "description": ""
+    },
+    {
+      "name": "LMS_RefNum",
+      "description": ""
+    },
+    {
+      "name": "LR_MONTHLY_PAYMENT",
+      "description": ""
+    },
+    {
+      "name": "LR_EQUIPMENT",
+      "description": ""
+    },
+    {
+      "name": "LR_WIRE_TRANFER",
+      "description": ""
+    },
+    {
+      "name": "LR_PACK_FEE",
+      "description": ""
+    },
+    {
+      "name": "LR_CANCELLATION",
+      "description": ""
+    },
+    {
+      "name": "leadID",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "mid",
+    "dba",
+    "sales_number",
+    "busaddress",
+    "buscity",
+    "busstate",
+    "buszipcode",
+    "bustype",
+    "busproducts",
+    "busmarkettype",
+    "busstartdate",
+    "sic",
+    "taxid",
+    "processor",
+    "owner_fname",
+    "owner_lname",
+    "owner_title",
+    "owner_ssn",
+    "phone",
+    "cellphone",
+    "email",
+    "contact",
+    "contact_1",
+    "contact_2",
+    "avgtckt",
+    "volume",
+    "bank_name_on_account",
+    "bank_account_type",
+    "bank_account_owner_type",
+    "aba_code",
+    "account_number",
+    "bank_name",
+    "bank_city",
+    "bank_state",
+    "bank_zip",
+    "LMS_FScore",
+    "LMS_RefNum",
+    "LR_MONTHLY_PAYMENT",
+    "LR_EQUIPMENT",
+    "LR_WIRE_TRANFER",
+    "LR_PACK_FEE",
+    "LR_CANCELLATION",
+    "leadID"
+  ]
+}

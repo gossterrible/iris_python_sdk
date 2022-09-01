@@ -1,0 +1,48 @@
+{
+  "title": "DateFilter",
+  "x-enum-elements": [
+    {
+      "name": "created",
+      "description": ""
+    },
+    {
+      "name": "modified",
+      "description": ""
+    },
+    {
+      "name": "last_note",
+      "description": ""
+    },
+    {
+      "name": "last_status",
+      "description": ""
+    },
+    {
+      "name": "last_task",
+      "description": ""
+    },
+    {
+      "name": "last_task_due",
+      "description": ""
+    },
+    {
+      "name": "last_appointment",
+      "description": ""
+    },
+    {
+      "name": "last_appointment_due",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "created",
+    "modified",
+    "last_note",
+    "last_status",
+    "last_task",
+    "last_task_due",
+    "last_appointment",
+    "last_appointment_due"
+  ]
+}

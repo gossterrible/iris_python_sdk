@@ -1,0 +1,20 @@
+{
+  "title": "FieldType",
+  "description": "Field type",
+  "example": "Text",
+  "x-enum-elements": [
+    {
+      "name": "Text",
+      "description": ""
+    },
+    {
+      "name": "Checkbox",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "Text",
+    "Checkbox"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "LeadsUsersResponse",
+  "title": "LeadsUsersResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "User has been assigned successfully",
+      "type": "string"
+    }
+  }
+}

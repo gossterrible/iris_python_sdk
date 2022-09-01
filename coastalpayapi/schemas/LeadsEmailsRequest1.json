@@ -1,0 +1,21 @@
+{
+  "id": "LeadsEmailsRequest1",
+  "title": "LeadsEmailsRequest1",
+  "type": "object",
+  "properties": {
+    "email": {
+      "description": "Recipient Email",
+      "example": "example@www.mycoastalpay.com",
+      "type": "string"
+    },
+    "name": {
+      "description": "Recipient Name",
+      "example": "John Doe",
+      "type": "string"
+    },
+    "placeholders": {
+      "description": "Object with template placeholders",
+      "type": "object"
+    }
+  }
+}

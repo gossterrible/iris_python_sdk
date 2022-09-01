@@ -1,0 +1,40 @@
+{
+  "id": "Meta",
+  "title": "Meta",
+  "type": "object",
+  "properties": {
+    "current_page": {
+      "description": "The current page number of a data set",
+      "type": "integer",
+      "format": "int32"
+    },
+    "from": {
+      "description": "The current position of a data set",
+      "type": "integer",
+      "format": "int32"
+    },
+    "last_page": {
+      "description": "The last page of a data set",
+      "type": "string"
+    },
+    "path": {
+      "description": "API path",
+      "type": "string"
+    },
+    "per_page": {
+      "description": "A number of records per page",
+      "type": "integer",
+      "format": "int32"
+    },
+    "to": {
+      "description": "The last position in a data set",
+      "type": "integer",
+      "format": "int32"
+    },
+    "total": {
+      "description": "Total number of records in a data set",
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

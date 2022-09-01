@@ -1,0 +1,27 @@
+{
+  "id": "LeadFieldOrder",
+  "title": "LeadFieldOrder",
+  "type": "object",
+  "properties": {
+    "value": {
+      "description": "New order position of lead field",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "Type1.json"
+        },
+        {
+          "description": "Type of changing order position",
+          "example": "increment"
+        }
+      ]
+    }
+  },
+  "required": [
+    "value"
+  ]
+}

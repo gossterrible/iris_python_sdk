@@ -1,0 +1,63 @@
+{
+  "id": "ApplicationField",
+  "title": "ApplicationField",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Application field Id",
+      "example": 1,
+      "readOnly": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    "from": {
+      "description": "Application field from field Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "record": {
+      "description": "Application field record",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "to": {
+      "description": "Name of mapped field",
+      "example": "Test",
+      "type": "string"
+    },
+    "toAlt": {
+      "description": "Alt of mapped field",
+      "example": "Alt test",
+      "type": "string"
+    },
+    "toType": {
+      "description": "Type of mapped field",
+      "example": "Text",
+      "type": "string"
+    },
+    "special": {
+      "allOf": [
+        {
+          "$ref": "Special1.json"
+        },
+        {
+          "description": "Special type of mapped field",
+          "example": "chk"
+        }
+      ]
+    },
+    "info": {
+      "description": "",
+      "readOnly": true,
+      "type": "array",
+      "items": {
+        "$ref": "Info.json"
+      }
+    }
+  },
+  "required": [
+    "from"
+  ]
+}

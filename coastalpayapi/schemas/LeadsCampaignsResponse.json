@@ -1,0 +1,14 @@
+{
+  "id": "LeadsCampaignsResponse",
+  "title": "LeadsCampaignsResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "A list of lead campaigns",
+      "type": "array",
+      "items": {
+        "$ref": "BriefCampaignInfo.json"
+      }
+    }
+  }
+}

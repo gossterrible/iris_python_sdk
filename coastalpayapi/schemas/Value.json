@@ -1,0 +1,16 @@
+{
+  "id": "Value",
+  "title": "Value",
+  "type": "object",
+  "properties": {
+    "field_id": {
+      "example": 133,
+      "type": "integer",
+      "format": "int32"
+    },
+    "value": {
+      "example": "Test",
+      "type": "string"
+    }
+  }
+}

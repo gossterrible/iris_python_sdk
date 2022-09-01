@@ -1,0 +1,25 @@
+{
+  "id": "Datum3",
+  "title": "Datum3",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Document Id",
+      "type": "string"
+    },
+    "name": {
+      "description": "Name",
+      "type": "string"
+    },
+    "size": {
+      "description": "Size",
+      "type": "string"
+    },
+    "tab": {
+      "$ref": "Tab.json"
+    },
+    "label": {
+      "$ref": "Label.json"
+    }
+  }
+}

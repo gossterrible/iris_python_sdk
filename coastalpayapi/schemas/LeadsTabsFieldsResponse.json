@@ -1,0 +1,10 @@
+{
+  "id": "LeadsTabsFieldsResponse",
+  "title": "LeadsTabsFieldsResponse",
+  "type": "object",
+  "properties": {
+    "items": {
+      "$ref": "Items.json"
+    }
+  }
+}

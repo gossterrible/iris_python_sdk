@@ -1,0 +1,38 @@
+{
+  "title": "PerPage",
+  "x-enum-elements": [
+    {
+      "name": "Enum_10",
+      "description": ""
+    },
+    {
+      "name": "Enum_25",
+      "description": ""
+    },
+    {
+      "name": "Enum_50",
+      "description": ""
+    },
+    {
+      "name": "Enum_100",
+      "description": ""
+    },
+    {
+      "name": "Enum_500",
+      "description": ""
+    },
+    {
+      "name": "Enum_1000",
+      "description": ""
+    }
+  ],
+  "type": "integer",
+  "enum": [
+    10,
+    25,
+    50,
+    100,
+    500,
+    1000
+  ]
+}

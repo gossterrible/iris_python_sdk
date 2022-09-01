@@ -1,0 +1,19 @@
+{
+  "id": "LeadsUsersRequest",
+  "title": "LeadsUsersRequest",
+  "type": "object",
+  "properties": {
+    "user": {
+      "description": "User Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "assign_manager": {
+      "description": "Assign User's Manager",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "user"
+  ]
+}

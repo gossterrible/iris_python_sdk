@@ -1,0 +1,23 @@
+{
+  "id": "Recipient5",
+  "title": "Recipient5",
+  "type": "object",
+  "properties": {
+    "fieldId": {
+      "description": "Lead Field Id with email address",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "email": {
+      "description": "Recipient Email",
+      "example": "example@www.mycoastalpay.com",
+      "type": "string"
+    },
+    "name": {
+      "description": "Recipient Name",
+      "example": "John Doe",
+      "type": "string"
+    }
+  }
+}

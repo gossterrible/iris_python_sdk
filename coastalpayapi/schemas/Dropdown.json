@@ -1,0 +1,16 @@
+{
+  "id": "Dropdown",
+  "title": "Dropdown",
+  "description": "Add new list item",
+  "type": "object",
+  "properties": {
+    "key": {
+      "example": "key",
+      "type": "string"
+    },
+    "value": {
+      "example": "Option Value",
+      "type": "string"
+    }
+  }
+}

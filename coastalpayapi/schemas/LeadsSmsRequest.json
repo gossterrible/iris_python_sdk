@@ -1,0 +1,12 @@
+{
+  "id": "LeadsSmsRequest",
+  "title": "LeadsSmsRequest",
+  "type": "object",
+  "properties": {
+    "fieldId": {
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

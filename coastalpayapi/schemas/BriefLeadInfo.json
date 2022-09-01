@@ -1,0 +1,48 @@
+{
+  "id": "BriefLeadInfo",
+  "title": "BriefLeadInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Lead Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "mid": {
+      "description": "Lead merchant Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Lead name",
+      "type": "string"
+    },
+    "group": {
+      "$ref": "BriefGroupInfo.json"
+    },
+    "category": {
+      "$ref": "BriefCategoryInfo.json"
+    },
+    "status": {
+      "$ref": "BriefStatusInfo.json"
+    },
+    "campaign": {
+      "$ref": "BriefCampaignInfo.json"
+    },
+    "source": {
+      "$ref": "BriefSourceInfo.json"
+    },
+    "created": {
+      "description": "Lead creation date (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "modified": {
+      "description": "Lead modification date (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

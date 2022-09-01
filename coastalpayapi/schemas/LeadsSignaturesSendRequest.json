@@ -1,0 +1,28 @@
+{
+  "id": "LeadsSignaturesSendRequest",
+  "title": "LeadsSignaturesSendRequest",
+  "type": "object",
+  "properties": {
+    "recipients": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "Recipient.json"
+          },
+          {
+            "$ref": "Recipient1.json"
+          }
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 5
+    },
+    "expire": {
+      "description": "Expire the previously generated application",
+      "example": true,
+      "type": "boolean"
+    }
+  }
+}

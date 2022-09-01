@@ -1,0 +1,14 @@
+{
+  "id": "LeadsGroupsResponse",
+  "title": "LeadsGroupsResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "A list of lead groups",
+      "type": "array",
+      "items": {
+        "$ref": "BriefGroupInfo.json"
+      }
+    }
+  }
+}

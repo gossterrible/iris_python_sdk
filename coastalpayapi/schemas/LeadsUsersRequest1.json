@@ -1,0 +1,18 @@
+{
+  "id": "LeadsUsersRequest1",
+  "title": "LeadsUsersRequest1",
+  "type": "object",
+  "properties": {
+    "email": {
+      "description": "User Email",
+      "type": "string"
+    },
+    "assign_manager": {
+      "description": "Assign User's Manager",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "email"
+  ]
+}

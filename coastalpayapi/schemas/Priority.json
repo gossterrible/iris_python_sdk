@@ -1,0 +1,25 @@
+{
+  "title": "Priority",
+  "description": "Priority",
+  "example": "Normal",
+  "x-enum-elements": [
+    {
+      "name": "Normal",
+      "description": ""
+    },
+    {
+      "name": "Medium",
+      "description": ""
+    },
+    {
+      "name": "High",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "Normal",
+    "Medium",
+    "High"
+  ]
+}

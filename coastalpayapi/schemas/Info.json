@@ -1,0 +1,94 @@
+{
+  "id": "Info",
+  "title": "Info",
+  "type": "object",
+  "properties": {
+    "field_name": {
+      "description": "Field name",
+      "example": "Business Address",
+      "type": "string"
+    },
+    "field_type": {
+      "allOf": [
+        {
+          "$ref": "FieldType.json"
+        },
+        {
+          "description": "Field type",
+          "example": "Text"
+        }
+      ]
+    },
+    "left": {
+      "description": "Padding from left",
+      "type": "integer",
+      "format": "int32"
+    },
+    "right": {
+      "description": "Padding from right",
+      "type": "integer",
+      "format": "int32"
+    },
+    "top": {
+      "description": "Padding from top",
+      "type": "integer",
+      "format": "int32"
+    },
+    "bottom": {
+      "description": "Padding from bottom",
+      "type": "integer",
+      "format": "int32"
+    },
+    "field_height": {
+      "description": "Height of field",
+      "type": "integer",
+      "format": "int32"
+    },
+    "field_width": {
+      "description": "Width of field",
+      "type": "integer",
+      "format": "int32"
+    },
+    "page_number": {
+      "description": "Page number",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "page_height": {
+      "description": "Page height",
+      "example": 792,
+      "type": "integer",
+      "format": "int32"
+    },
+    "page_width": {
+      "description": "Page width",
+      "example": 612,
+      "type": "integer",
+      "format": "int32"
+    },
+    "page_rotation": {
+      "description": "Page rotation",
+      "example": 0,
+      "type": "integer",
+      "format": "int32"
+    },
+    "export_value": {
+      "description": "Export value",
+      "example": "Yes",
+      "type": "string"
+    },
+    "tooltip": {
+      "description": "Field tooltip",
+      "example": "Test",
+      "type": "string"
+    },
+    "duplicates": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "Duplicate.json"
+      }
+    }
+  }
+}

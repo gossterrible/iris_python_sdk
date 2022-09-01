@@ -1,0 +1,60 @@
+{
+  "id": "Datum",
+  "title": "Datum",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Template Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Template name",
+      "example": "Pricing #1",
+      "type": "string"
+    },
+    "created_by": {
+      "description": "Template creator",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "created_at": {
+      "description": "Template modification date and time (ISO-8601)",
+      "example": "2021-02-24T13:16:13+00:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "modified_by": {
+      "description": "Template modification date and time (ISO-8601)",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "modified_at": {
+      "description": "Last template editor",
+      "example": "2021-02-24T13:16:13+00:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "fields_changed_by": {
+      "description": "Last fields editor",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "fields_changed_at": {
+      "description": "Last fileds modification date and time (ISO-8601)",
+      "example": "2021-02-24T13:16:13+00:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "values": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "Value.json"
+      }
+    }
+  }
+}

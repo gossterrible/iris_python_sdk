@@ -1,0 +1,14 @@
+{
+  "id": "LeadsSourcesResponse",
+  "title": "LeadsSourcesResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "A list of lead sources",
+      "type": "array",
+      "items": {
+        "$ref": "BriefSourceInfo.json"
+      }
+    }
+  }
+}

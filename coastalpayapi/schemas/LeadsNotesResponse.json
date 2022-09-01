@@ -1,0 +1,11 @@
+{
+  "id": "LeadsNotesResponse",
+  "title": "LeadsNotesResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "The note has been added successfully",
+      "type": "string"
+    }
+  }
+}

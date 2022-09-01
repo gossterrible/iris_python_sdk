@@ -1,0 +1,15 @@
+{
+  "id": "LeadsApplicationsPopulateResponse",
+  "title": "LeadsApplicationsPopulateResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "Document populated successfully.",
+      "type": "string"
+    },
+    "url": {
+      "example": "https://www.mycoastalpay.com/download/leadfile/1",
+      "type": "string"
+    }
+  }
+}

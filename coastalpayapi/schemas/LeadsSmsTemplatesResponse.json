@@ -1,0 +1,14 @@
+{
+  "id": "LeadsSmsTemplatesResponse",
+  "title": "LeadsSmsTemplatesResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "BriefSmsTemplate.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Field",
+  "title": "Field",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Field Id",
+      "example": "1",
+      "type": "string"
+    },
+    "record": {
+      "description": "Record Id",
+      "example": "1",
+      "type": "string"
+    },
+    "value": {
+      "description": "Field value",
+      "example": "Test",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "value"
+  ]
+}

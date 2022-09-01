@@ -1,0 +1,30 @@
+{
+  "title": "Position",
+  "description": "Tab position",
+  "example": 1,
+  "x-enum-elements": [
+    {
+      "name": "Enum_1",
+      "description": ""
+    },
+    {
+      "name": "Enum_2",
+      "description": ""
+    },
+    {
+      "name": "Enum_3",
+      "description": ""
+    },
+    {
+      "name": "Enum_4",
+      "description": ""
+    }
+  ],
+  "type": "integer",
+  "enum": [
+    1,
+    2,
+    3,
+    4
+  ]
+}

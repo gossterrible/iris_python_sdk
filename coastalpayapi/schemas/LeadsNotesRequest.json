@@ -1,0 +1,39 @@
+{
+  "id": "LeadsNotesRequest",
+  "title": "LeadsNotesRequest",
+  "type": "object",
+  "properties": {
+    "tab": {
+      "description": "Tab Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "note": {
+      "description": "Note text",
+      "example": "Test note",
+      "type": "string"
+    },
+    "sticky": {
+      "allOf": [
+        {
+          "$ref": "Sticky.json"
+        },
+        {
+          "description": "Pin to top?",
+          "example": "Yes"
+        }
+      ]
+    },
+    "notify_users": {
+      "description": "Comma separated list of user ids to notify or `all_assigned` to notify all users assigned to the lead",
+      "example": "1,2,3",
+      "type": "string"
+    }
+  },
+  "required": [
+    "tab",
+    "note",
+    "sticky"
+  ]
+}

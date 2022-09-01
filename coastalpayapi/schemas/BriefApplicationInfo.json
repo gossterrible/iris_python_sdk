@@ -1,0 +1,20 @@
+{
+  "id": "BriefApplicationInfo",
+  "title": "BriefApplicationInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Application Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Application name",
+      "type": "string"
+    },
+    "e-sign": {
+      "description": "Is E-Sign available?",
+      "type": "string"
+    }
+  }
+}

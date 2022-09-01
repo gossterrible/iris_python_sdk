@@ -1,0 +1,17 @@
+{
+  "id": "LeadsResponse2",
+  "title": "LeadsResponse2",
+  "type": "object",
+  "properties": {
+    "general": {
+      "$ref": "BriefLeadInfo.json"
+    },
+    "details": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "Detail.json"
+      }
+    }
+  }
+}

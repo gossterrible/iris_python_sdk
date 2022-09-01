@@ -1,0 +1,16 @@
+{
+  "id": "Tab",
+  "title": "Tab",
+  "type": "object",
+  "properties": {
+    "id": {
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "example": "Tab name",
+      "type": "string"
+    }
+  }
+}

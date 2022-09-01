@@ -1,0 +1,37 @@
+{
+  "id": "DeletionActivity",
+  "title": "DeletionActivity",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Activity Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "deletedId": {
+      "description": "User Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "deletedAt": {
+      "description": "Date of deletion (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "undeletedId": {
+      "description": "User Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "undeletedAt": {
+      "description": "Date of undeletion (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

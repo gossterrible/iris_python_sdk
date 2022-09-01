@@ -1,0 +1,11 @@
+{
+  "id": "LeadsAppointmentsResponse",
+  "title": "LeadsAppointmentsResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "Appointment has been created successfully",
+      "type": "string"
+    }
+  }
+}

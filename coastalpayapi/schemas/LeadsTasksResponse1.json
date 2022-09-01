@@ -1,0 +1,20 @@
+{
+  "id": "LeadsTasksResponse1",
+  "title": "LeadsTasksResponse1",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "Datum2.json"
+      }
+    },
+    "links": {
+      "$ref": "Links.json"
+    },
+    "meta": {
+      "$ref": "Meta.json"
+    }
+  }
+}

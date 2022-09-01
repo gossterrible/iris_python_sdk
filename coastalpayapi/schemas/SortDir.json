@@ -1,0 +1,18 @@
+{
+  "title": "SortDir",
+  "x-enum-elements": [
+    {
+      "name": "asc",
+      "description": ""
+    },
+    {
+      "name": "desc",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "asc",
+    "desc"
+  ]
+}

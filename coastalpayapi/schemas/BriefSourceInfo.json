@@ -1,0 +1,16 @@
+{
+  "id": "BriefSourceInfo",
+  "title": "BriefSourceInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Source Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Source name",
+      "type": "string"
+    }
+  }
+}

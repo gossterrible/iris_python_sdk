@@ -1,0 +1,17 @@
+{
+  "id": "LeadsEmailsResponse",
+  "title": "LeadsEmailsResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "description": "Email has been sent successfully",
+      "example": "Email has been sent successfully.",
+      "type": "string"
+    },
+    "emailId": {
+      "description": "Id of email what will be sended to lead",
+      "example": "1",
+      "type": "string"
+    }
+  }
+}

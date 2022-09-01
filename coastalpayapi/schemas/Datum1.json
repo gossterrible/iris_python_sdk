@@ -1,0 +1,38 @@
+{
+  "id": "Datum1",
+  "title": "Datum1",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Note Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "sticky": {
+      "allOf": [
+        {
+          "$ref": "Sticky1.json"
+        },
+        {
+          "description": "Pin note to top",
+          "example": "Yes"
+        }
+      ]
+    },
+    "tab": {
+      "$ref": "BriefTabInfo.json"
+    },
+    "text": {
+      "description": "Note text",
+      "type": "string"
+    },
+    "created": {
+      "description": "Note creation date and time (ISO-8601)",
+      "type": "string"
+    },
+    "modified": {
+      "description": "Note modification date and time (ISO-8601)",
+      "type": "string"
+    }
+  }
+}

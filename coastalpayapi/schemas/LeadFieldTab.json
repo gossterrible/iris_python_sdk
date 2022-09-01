@@ -1,0 +1,64 @@
+{
+  "id": "LeadFieldTab",
+  "title": "LeadFieldTab",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Tab Id",
+      "example": 1,
+      "readOnly": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    "active": {
+      "allOf": [
+        {
+          "$ref": "Active.json"
+        },
+        {
+          "description": "Active tab",
+          "example": 1
+        }
+      ]
+    },
+    "position": {
+      "allOf": [
+        {
+          "$ref": "Position.json"
+        },
+        {
+          "description": "Tab position",
+          "example": 1
+        }
+      ]
+    },
+    "class": {
+      "allOf": [
+        {
+          "$ref": "Class.json"
+        },
+        {
+          "description": "Tab class",
+          "example": "documents"
+        }
+      ]
+    },
+    "name": {
+      "description": "Tab class",
+      "example": "New tab",
+      "type": "string"
+    },
+    "order": {
+      "description": "Tab order",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "required": [
+    "position",
+    "class",
+    "name",
+    "order"
+  ]
+}

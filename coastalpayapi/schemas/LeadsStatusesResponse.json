@@ -1,0 +1,14 @@
+{
+  "id": "LeadsStatusesResponse",
+  "title": "LeadsStatusesResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "A list of lead statuses",
+      "type": "array",
+      "items": {
+        "$ref": "CategoryWithStatuses.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "title": "Type",
+  "description": "Field type",
+  "example": "Select",
+  "x-enum-elements": [
+    {
+      "name": "DateCreate",
+      "description": ""
+    },
+    {
+      "name": "GoogleMaps",
+      "description": ""
+    },
+    {
+      "name": "jQDate",
+      "description": ""
+    },
+    {
+      "name": "Number",
+      "description": ""
+    },
+    {
+      "name": "Txt",
+      "description": ""
+    },
+    {
+      "name": "TxtArea",
+      "description": ""
+    },
+    {
+      "name": "TxtDollar",
+      "description": ""
+    },
+    {
+      "name": "TxtBalance",
+      "description": ""
+    },
+    {
+      "name": "TxtSIC",
+      "description": ""
+    },
+    {
+      "name": "TxtPercent",
+      "description": ""
+    },
+    {
+      "name": "TxtRouting",
+      "description": ""
+    },
+    {
+      "name": "TxtSecure",
+      "description": ""
+    },
+    {
+      "name": "TxtMasked",
+      "description": ""
+    },
+    {
+      "name": "Checkbox",
+      "description": ""
+    },
+    {
+      "name": "Select",
+      "description": ""
+    },
+    {
+      "name": "SelectRed",
+      "description": ""
+    },
+    {
+      "name": "Label",
+      "description": ""
+    },
+    {
+      "name": "Packages",
+      "description": ""
+    },
+    {
+      "name": "PhoneMask",
+      "description": ""
+    },
+    {
+      "name": "PrFormats",
+      "description": ""
+    },
+    {
+      "name": "QuickEmail",
+      "description": ""
+    },
+    {
+      "name": "QuickFax",
+      "description": ""
+    },
+    {
+      "name": "TimeZone",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "DateCreate",
+    "GoogleMaps",
+    "jQDate",
+    "Number",
+    "Txt",
+    "TxtArea",
+    "TxtDollar",
+    "TxtBalance",
+    "TxtSIC",
+    "TxtPercent",
+    "TxtRouting",
+    "TxtSecure",
+    "TxtMasked",
+    "Checkbox",
+    "Select",
+    "SelectRed",
+    "Label",
+    "Packages",
+    "PhoneMask",
+    "PrFormats",
+    "QuickEmail",
+    "QuickFax",
+    "TimeZone"
+  ]
+}

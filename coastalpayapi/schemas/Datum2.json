@@ -1,0 +1,31 @@
+{
+  "id": "Datum2",
+  "title": "Datum2",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Task Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "user": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "text": {
+      "description": "Task description",
+      "type": "string"
+    },
+    "date": {
+      "description": "Task Date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "confirmed": {
+      "description": "Task confirmed date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

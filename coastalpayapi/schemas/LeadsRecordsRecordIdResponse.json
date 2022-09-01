@@ -1,0 +1,11 @@
+{
+  "id": "LeadsRecordsRecordIdResponse",
+  "title": "LeadsRecordsRecordIdResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "The record has been deleted successfully",
+      "type": "string"
+    }
+  }
+}

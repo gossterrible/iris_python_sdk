@@ -1,0 +1,17 @@
+{
+  "id": "LeadsSmsResponse",
+  "title": "LeadsSmsResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "description": "SMS has been sent successfully.",
+      "example": "SMS has been sent successfully.",
+      "type": "string"
+    },
+    "receiver": {
+      "description": "Phone number of SMS receiver.",
+      "example": "123-456-7890",
+      "type": "string"
+    }
+  }
+}

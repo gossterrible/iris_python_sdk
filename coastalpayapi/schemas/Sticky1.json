@@ -1,0 +1,20 @@
+{
+  "title": "Sticky1",
+  "description": "Pin note to top",
+  "example": "Yes",
+  "x-enum-elements": [
+    {
+      "name": "Yes",
+      "description": ""
+    },
+    {
+      "name": "No",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "Yes",
+    "No"
+  ]
+}

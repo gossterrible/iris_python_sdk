@@ -1,0 +1,20 @@
+{
+  "id": "LeadsFieldsTabsResponse",
+  "title": "LeadsFieldsTabsResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "LeadFieldTab.json"
+      }
+    },
+    "links": {
+      "$ref": "Links.json"
+    },
+    "meta": {
+      "$ref": "Meta.json"
+    }
+  }
+}

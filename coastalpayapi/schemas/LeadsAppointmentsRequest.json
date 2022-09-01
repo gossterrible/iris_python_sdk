@@ -1,0 +1,40 @@
+{
+  "id": "LeadsAppointmentsRequest",
+  "title": "LeadsAppointmentsRequest",
+  "type": "object",
+  "properties": {
+    "date": {
+      "description": "Date in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2018-05-30T13:16:13+00:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "date_end": {
+      "description": "End date in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2018-05-30T13:26:13+00:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "text": {
+      "description": "Task description",
+      "type": "string"
+    },
+    "set_by": {
+      "description": "Task set by user (User Id)",
+      "example": "1",
+      "type": "string"
+    },
+    "set_for": {
+      "description": "Task set for user (User Id)",
+      "example": "1",
+      "type": "string"
+    }
+  },
+  "required": [
+    "date",
+    "date_end",
+    "text",
+    "set_by",
+    "set_for"
+  ]
+}

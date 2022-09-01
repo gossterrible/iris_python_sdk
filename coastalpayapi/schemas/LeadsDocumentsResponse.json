@@ -1,0 +1,20 @@
+{
+  "id": "LeadsDocumentsResponse",
+  "title": "LeadsDocumentsResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "A list of lead documents",
+      "type": "array",
+      "items": {
+        "$ref": "Datum3.json"
+      }
+    },
+    "links": {
+      "$ref": "Links.json"
+    },
+    "meta": {
+      "$ref": "Meta.json"
+    }
+  }
+}

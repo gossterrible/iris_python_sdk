@@ -1,0 +1,18 @@
+{
+  "id": "BriefUserInfo",
+  "title": "BriefUserInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "User Id",
+      "example": 123,
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "User name",
+      "example": "John Doe",
+      "type": "string"
+    }
+  }
+}

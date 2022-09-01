@@ -1,0 +1,36 @@
+{
+  "id": "Detail",
+  "title": "Detail",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "Type2.json"
+        },
+        {
+          "example": "tab"
+        }
+      ]
+    },
+    "record": {
+      "description": "Record Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "fields": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "LeadFieldValue.json"
+      }
+    }
+  }
+}

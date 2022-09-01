@@ -1,0 +1,20 @@
+{
+  "title": "Active",
+  "description": "Active tab",
+  "example": 1,
+  "x-enum-elements": [
+    {
+      "name": "Enum_0",
+      "description": ""
+    },
+    {
+      "name": "Enum_1",
+      "description": ""
+    }
+  ],
+  "type": "integer",
+  "enum": [
+    0,
+    1
+  ]
+}

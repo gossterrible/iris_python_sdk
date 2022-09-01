@@ -1,0 +1,16 @@
+{
+  "id": "BriefEmailTemplate",
+  "title": "BriefEmailTemplate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "title": {
+      "example": "Email template title",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "DateFilter1",
+  "x-enum-elements": [
+    {
+      "name": "date",
+      "description": ""
+    },
+    {
+      "name": "set_at",
+      "description": ""
+    },
+    {
+      "name": "modified",
+      "description": ""
+    },
+    {
+      "name": "confirmed",
+      "description": ""
+    },
+    {
+      "name": "rescheduled",
+      "description": ""
+    },
+    {
+      "name": "seen",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "date",
+    "set_at",
+    "modified",
+    "confirmed",
+    "rescheduled",
+    "seen"
+  ]
+}

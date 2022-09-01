@@ -1,0 +1,28 @@
+{
+  "id": "Copy",
+  "title": "Copy",
+  "description": "Copy button properties",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "Button label",
+      "type": "string"
+    },
+    "from": {
+      "description": "Copy from",
+      "example": {
+        "1": 1,
+        "2": 2
+      },
+      "type": "object"
+    },
+    "to": {
+      "description": "Copy to",
+      "example": {
+        "1": 1,
+        "2": 2
+      },
+      "type": "object"
+    }
+  }
+}

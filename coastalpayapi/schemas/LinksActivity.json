@@ -1,0 +1,46 @@
+{
+  "id": "LinksActivity",
+  "title": "LinksActivity",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Activity Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "allOf": [
+        {
+          "$ref": "Status.json"
+        },
+        {
+          "description": "Status of link",
+          "example": "Linked"
+        }
+      ]
+    },
+    "lead": {
+      "description": "Lead Id",
+      "example": "123",
+      "type": "string"
+    },
+    "merchant": {
+      "description": "Merchant Id",
+      "example": "123",
+      "type": "string"
+    },
+    "linkedBy": {
+      "description": "User Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "linkedAt": {
+      "description": "Linking date (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "Duplicate",
+  "title": "Duplicate",
+  "type": "object",
+  "properties": {
+    "instance": {
+      "description": "Activity Id",
+      "example": 2,
+      "type": "integer",
+      "format": "int32"
+    },
+    "left": {
+      "description": "Padding from left",
+      "type": "integer",
+      "format": "int32"
+    },
+    "right": {
+      "description": "Padding from right",
+      "type": "integer",
+      "format": "int32"
+    },
+    "top": {
+      "description": "Padding from top",
+      "type": "integer",
+      "format": "int32"
+    },
+    "bottom": {
+      "description": "Padding from bottom",
+      "type": "integer",
+      "format": "int32"
+    },
+    "height": {
+      "description": "Height of field",
+      "type": "integer",
+      "format": "int32"
+    },
+    "width": {
+      "description": "Width of field",
+      "type": "integer",
+      "format": "int32"
+    },
+    "page_number": {
+      "description": "Page number",
+      "example": 4,
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

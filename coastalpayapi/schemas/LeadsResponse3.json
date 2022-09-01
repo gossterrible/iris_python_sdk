@@ -1,0 +1,11 @@
+{
+  "id": "LeadsResponse3",
+  "title": "LeadsResponse3",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "The lead has been updated successfully",
+      "type": "string"
+    }
+  }
+}

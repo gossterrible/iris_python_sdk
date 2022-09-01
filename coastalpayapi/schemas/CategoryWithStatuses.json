@@ -1,0 +1,23 @@
+{
+  "id": "CategoryWithStatuses",
+  "title": "CategoryWithStatuses",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Status category Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Status category name",
+      "type": "string"
+    },
+    "statuses": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "BriefStatusInfo.json"
+      }
+    }
+  }
+}

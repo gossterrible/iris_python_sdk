@@ -1,0 +1,20 @@
+{
+  "id": "LeadsActivityDeletionResponse",
+  "title": "LeadsActivityDeletionResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "DeletionActivity.json"
+      }
+    },
+    "links": {
+      "$ref": "Links.json"
+    },
+    "meta": {
+      "$ref": "Meta.json"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Mask",
+  "description": "Field mask",
+  "x-enum-elements": [
+    {
+      "name": "validateSSN",
+      "description": ""
+    },
+    {
+      "name": "validateDate",
+      "description": ""
+    },
+    {
+      "name": "validateDate2",
+      "description": ""
+    },
+    {
+      "name": "validateZip5",
+      "description": ""
+    },
+    {
+      "name": "validateZip9",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "validateSSN",
+    "validateDate",
+    "validateDate2",
+    "validateZip5",
+    "validateZip9"
+  ]
+}

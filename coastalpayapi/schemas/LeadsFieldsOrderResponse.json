@@ -1,0 +1,11 @@
+{
+  "id": "LeadsFieldsOrderResponse",
+  "title": "LeadsFieldsOrderResponse",
+  "type": "object",
+  "properties": {
+    "result": {
+      "example": "Successful",
+      "type": "string"
+    }
+  }
+}

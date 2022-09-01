@@ -1,0 +1,24 @@
+{
+  "id": "FileLabel",
+  "title": "FileLabel",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Label Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "order": {
+      "description": "Label display order",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Label name",
+      "example": "Default",
+      "type": "string"
+    }
+  }
+}

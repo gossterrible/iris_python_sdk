@@ -1,0 +1,37 @@
+{
+  "id": "DuplicateActivity",
+  "title": "DuplicateActivity",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Activity Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "oldLeadId": {
+      "description": "Old lead Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "newLeadId": {
+      "description": "New lead Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "duplicatedBy": {
+      "description": "User Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "duplicatedAt": {
+      "description": "Date of duplication (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

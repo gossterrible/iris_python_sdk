@@ -1,0 +1,50 @@
+{
+  "id": "LeadsTasksRequest",
+  "title": "LeadsTasksRequest",
+  "type": "object",
+  "properties": {
+    "priority": {
+      "allOf": [
+        {
+          "$ref": "Priority.json"
+        },
+        {
+          "description": "Priority",
+          "example": "Normal"
+        }
+      ]
+    },
+    "date": {
+      "description": "Date in ISO 8601 format (Y-m-d\\TH:i:sP)",
+      "example": "2018-05-30T13:16:13+00:00",
+      "type": "string"
+    },
+    "date_end": {
+      "description": "End date in ISO 8601 format (Y-m-d\\TH:i:sP)",
+      "example": "2018-05-30T13:26:13+00:00",
+      "type": "string"
+    },
+    "text": {
+      "description": "Task description",
+      "type": "string"
+    },
+    "set_by": {
+      "description": "Task set by user (user Id)",
+      "example": "1",
+      "type": "string"
+    },
+    "set_for": {
+      "description": "Task set for user (user Id)",
+      "example": "1",
+      "type": "string"
+    }
+  },
+  "required": [
+    "priority",
+    "date",
+    "date_end",
+    "text",
+    "set_by",
+    "set_for"
+  ]
+}

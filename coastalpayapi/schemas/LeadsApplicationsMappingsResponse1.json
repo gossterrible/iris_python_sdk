@@ -1,0 +1,11 @@
+{
+  "id": "LeadsApplicationsMappingsResponse1",
+  "title": "LeadsApplicationsMappingsResponse1",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "Mapping was successfully removed.",
+      "type": "string"
+    }
+  }
+}

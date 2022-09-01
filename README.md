@@ -1,13 +1,22 @@
-# iriscrm
-# Introduction
+
+# Getting Started with Coastal Pay API
+
+## Introduction
+
+### Introduction
+
 Welcome to Coastal Pay’s API!
 
 The API is organized around `REST`. All requests should be made over `SSL`.
 
 All request and response bodies, including errors, are encoded in `JSON`.
-# Open API
+
+### Open API
+
 The Open API provides numerous functions to access or to update your CRM lead  and merchant  data using simple REST calls.
-### You can use the E-Signature API to:
+
+#### You can use the E-Signature API to:
+
 - [Generate an e-signature document](https://www.mycoastalpay.com/api#/paths/~1leads~1{leadId}~1signatures~1{applicationId}~1generate/post)
 - [Send an e-signature document](https://www.mycoastalpay.com/api#/paths/~1leads~1{leadId}~1signatures~1{applicationId}~1send/post)
 - [Download an e-signature document](https://www.mycoastalpay.com/api#/paths/~1leads~1signatures~1{applicationId}~1download/get)
@@ -18,7 +27,9 @@ The Open API provides numerous functions to access or to update your CRM lead  a
 - [Get an application field mapping list](https://www.mycoastalpay.com/api#/paths/~1leads~1applications~1{appId}~1mappings~1{mapId}/get)
 - [Update an application field mapping](https://www.mycoastalpay.com/api#/paths/~1leads~1applications~1{appId}~1mappings~1{mapId}/patch)
 - [Delete an application field mapping](https://www.mycoastalpay.com/api#/paths/~1leads~1applications~1{appId}~1mappings~1{mapId}/delete)
-### You can use the Helpdesk API to:
+
+#### You can use the Helpdesk API to:
+
 - [Create a new ticket](https://www.mycoastalpay.com/api#/paths/~1helpdesk/post)
 - [Get a list of helpdesk tickets](https://www.mycoastalpay.com/api#/paths/~1helpdesk/get)
 - [Add a ticket comment](https://www.mycoastalpay.com/api#/paths/~1helpdesk~1{ticketId}~1comment/post)
@@ -34,7 +45,9 @@ The Open API provides numerous functions to access or to update your CRM lead  a
 - [Delete a ticket type](https://www.mycoastalpay.com/api#/paths/~1helpdesk~1types~1{typeId}/delete)
 - [Download an attachment from a ticket type](https://www.mycoastalpay.com/api#/paths/~1helpdesk~1types~1{typeId}~1download~1{attachmentId}/get)
 - [Get a list of available users to notify and assign](https://www.mycoastalpay.com/api#/paths/~1helpdesk~1users/get)
-### You can use the Lead API to:
+
+#### You can use the Lead API to:
+
 - [Create a lead](https://www.mycoastalpay.com/api#/paths/~1leads/post)
 - [Get a list of leads](https://www.mycoastalpay.com/api#/paths/~1leads/get)
 - [Get detailed lead information](https://www.mycoastalpay.com/api#/paths/~1leads~1{leadId}/get)
@@ -80,7 +93,8 @@ The Open API provides numerous functions to access or to update your CRM lead  a
 - [Get a list of available statuses](https://www.mycoastalpay.com/api#/paths/~1leads~1statuses/get)
 - [Get a list of available users](https://www.mycoastalpay.com/api#/paths/~1leads~1users/get)
 
-### You can use the Merchant API to:
+#### You can use the Merchant API to:
+
 - [Get a list of merchants](https://www.mycoastalpay.com/api#/paths/~1merchants/get)
 - [Get detailed merchant information](https://www.mycoastalpay.com/api#/paths/~1merchants~1{merchantNumber}/get)
 - [Update an existing merchant](https://www.mycoastalpay.com/api#/paths/~1merchants~1{merchantNumber}/patch)
@@ -89,7 +103,9 @@ The Open API provides numerous functions to access or to update your CRM lead  a
 - [Get a list of retrievals](https://www.mycoastalpay.com/api#/paths/~1merchants~1{merchantNumber}~1retrievals/get)
 - [Get a list of statements](https://www.mycoastalpay.com/api#/paths/~1merchants~1{merchantNumber}~1statements/get)
 - [Download a statement](https://www.mycoastalpay.com/api#/paths/~1merchants~1{merchantNumber}~1statements~1{statementId}/get)
-### You can use the Residuals API to:
+
+#### You can use the Residuals API to:
+
 - [Get residuals summary data](https://www.mycoastalpay.com/api#/paths/~1residuals~1reports~1summary~1{year}~1{month}/get)
 - [Get residuals summary with merchant rows](https://www.mycoastalpay.com/api#/paths/~1residuals~1reports~1summary~1rows~1{processor_id}~1{year}~1{month}/get)
 - [Get residuals details with merchant rows](https://www.mycoastalpay.com/api#/paths/~1residuals~1reports~1details~1{processor_id}~1{year}~1{month}/get)
@@ -97,31 +113,36 @@ The Open API provides numerous functions to access or to update your CRM lead  a
 - [Get residuals templates](https://www.mycoastalpay.com/api#/paths/~1residuals~1templates~1/get)
 - [Get a list of users with assigned residuals templates](https://www.mycoastalpay.com/api#/paths/~1residuals~1templates~1assigned~1{year}~1{month}/get)
 
+### Generate an API token
 
-# Generate an API token
 When you send an API request, you will need to include an API token in your request in order to authenticate your account.
 
 The tokens are generated in the CRM by each user individually, and each user may create one or more tokens.
 
-To generate a new API Token, open your user settings page by clicking on your username in the top-right corner, and clicking on the ** Settings ** link or you can use the <a href=\"https://www.mycoastalpay.com/settings\">link</a>.
+To generate a new API Token, open your user settings page by clicking on your username in the top-right corner, and clicking on the ** Settings ** link or you can use the <a href="https://www.mycoastalpay.com/settings">link</a>.
 
 Then open the ** API Settings ** tab, click ** Create New API Token **, configure your token’s settings as needed, and click ** Add New Token **:
 
 <img src='https://www.mycoastalpay.com/images/docs/mapi001.png'/>
 
+
 Your new token will now be created and displayed in a popup window:
 
 <img src='https://www.mycoastalpay.com/images/docs/mapi002.png'/>
+
 
 Once the token is created, it will be shown in the list of available API Tokens where you can copy the token, update its settings, or delete it once it’s no longer needed:
 
 <img src='https://www.mycoastalpay.com/images/docs/mapi003.png'/>
 
+
 ** Note: ** The created tokens will inherit the user’s permissions to assigned merchants, leads, groups and processors.
-# Using the API
+
+### Using the API
+
 Authentication to the API is performed via `X-API-KEY` header. Requests not properly authenticated will return a `401` error code.
 
-`curl -X GET \"https://www.mycoastalpay.com/api/v1/leads\" -H \"accept: application/json\" -H \"X-API-KEY: [YOURKEY]\"`
+`curl -X GET "https://www.mycoastalpay.com/api/v1/leads" -H "accept: application/json" -H "X-API-KEY: [YOURKEY]"`
 
 Note that all requests should be made over `SSL`. All request and response bodies, including errors, are encoded in JSON.
 
@@ -129,8 +150,10 @@ The API returns standard HTTP success or error status codes. In case of errors, 
 
 By default, you can make `500` requests per minute. Check the returned HTTP headers of any API request to see your current rate limit status.
 
-Each GET \"List\" request will return 1,000 matching results.  A maximum of 500,000 results can be returned per minute using a pagination parameter in these requests.
-# Using the Subscription API
+Each GET "List" request will return 1,000 matching results.  A maximum of 500,000 results can be returned per minute using a pagination parameter in these requests.
+
+### Using the Subscription API
+
 API Subscriptions are used to send information about an event to a URL and trigger an API call. This is more efficient than doing scheduled API calls.
 
 To create a subscription, use the API Settings page or send a request using the instructions in the Subscriptions section below.
@@ -152,15 +175,15 @@ Headers description:
 * `Retry-After` tells you how many seconds to wait until you try again. (you'll only get `Retry-After` if you've hit the limit).
 
 
-# PHP SDK
+### PHP SDK
 
-### Installation and Usage
+#### Installation and Usage
 
-#### Availability
+##### Availability
 
 The IRIS CRM PHP SDK requires PHP version 5.5 or higher and the PHP cURL extension.
 
-#### Composer
+##### Composer
 
 To install the bindings via [Composer](http://getcomposer.org/), please run:
 
@@ -174,29 +197,29 @@ In your code, configure the environment and API credentials:
 ```php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-use Swagger\\Client\\Configuration;
-use Swagger\\Client\\Api\\LeadsApi;
+use Swagger\Client\Configuration;
+use Swagger\Client\Api\LeadsApi;
 
 // Configure API key authorization
 $config = Configuration::getDefaultConfiguration() ->setApiKey('X-API-KEY', 'YOUR_API_KEY') ->setHost('https://www.mycoastalpay.com/api/v1/'); ```
 Here’s an example of how to get a list of leads using an SDK.
-Swagger\\Client\\Api\\LeadsApi it's a SDK Class for Lead endpoints.
+Swagger\Client\Api\LeadsApi it's a SDK Class for Lead endpoints.
 ```php
 $apiInstance = new LeadsApi(null, $config);
 
 $page        = 1; // int | Page number
-$sort_by     = \"created\"; // string | Sorting of leads by the field value
-$sort_dir    = \"asc\"; // string | Direction of sorting
+$sort_by     = "created"; // string | Sorting of leads by the field value
+$sort_dir    = "asc"; // string | Direction of sorting
 $group       = 2; // int | Filter leads by a group id
 $campaign    = 3; // int | Filter leads by a campaign id
 $source      = 4; // int | Filter leads by a source id
 $status      = 1; // int | Filter leads by a status id
 $category    = 1; // int | Filter leads by a status category id
 $user        = 12; // int | Filter leads by a user id
-$date_filter = \"created\"; // string | Filtering leads by a date range depends on this filter
-$start_date  = new \\DateTime(\"2018-10-20T19:20:30+01:00\"); // \\DateTime | Filter leads by a date in ISO 8601 format (Y-m-d\\\\TH:i:sP)
-$end_date    = new \\DateTime(\"2019-10-20T19:20:30+01:00\"); // \\DateTime | Filter leads by a date in ISO 8601 format (Y-m-d\\\\TH:i:sP)
-$email       = \"test@mail.com\"; // string | Filter leads by a email
+$date_filter = "created"; // string | Filtering leads by a date range depends on this filter
+$start_date  = new \DateTime("2018-10-20T19:20:30+01:00"); // \DateTime | Filter leads by a date in ISO 8601 format (Y-m-d\\TH:i:sP)
+$end_date    = new \DateTime("2019-10-20T19:20:30+01:00"); // \DateTime | Filter leads by a date in ISO 8601 format (Y-m-d\\TH:i:sP)
+$email       = "test@mail.com"; // string | Filter leads by a email
 try {
     $result = $apiInstance->leadsGet($page, $sort_by, $sort_dir, $group, $campaign, $source, $status, $category, $user, $date_filter, $start_date, $end_date, $email);
     print_r($result);
@@ -207,7 +230,7 @@ All parameters for leadsGet method is optional and can be skipped.
 
 If you want skip some parameters - you need to set parameter to `null`
 
-All available classes and methods you can get in \"API Endpoints\" section below.
+All available classes and methods you can get in "API Endpoints" section below.
 ### API Endpoints
 All URIs are relative to *https://www.mycoastalpay.com/api/v1*
 
@@ -275,17 +298,17 @@ Class | Method | HTTP Request | Description
 *MerchantsApi* | **merchantsMerchantNumberTransactionsGet** | **GET** /merchants/{merchantNumber}/transactions | Get a list of batches and transactions
 *SubscriptionsApi* | **subscriptionsGet** | **GET** /subscriptions | Return a list of subscriptions
 *SubscriptionsApi* | **subscriptionsPost** | **POST** /subscriptions | Create a subscription
-*SubscriptionsApi* | **subscriptionsSampleApiUpdatedGet** | **GET** /subscriptions/sample/api.updated | Data sample for the \\&quot;api.updated\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleApplicationCreatedGet** | **GET** /subscriptions/sample/turboapp.submitted | Data sample for the \\&quot;turboapp.submitted\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleApplicationUpdatedGet** | **GET** /subscriptions/sample/turboapp.updated | Data sample for the \\&quot;turboapp.updated\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadCreatedGet** | **GET** /subscriptions/sample/lead.created | Data sample for the \\&quot;lead.created\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadDeletedGet** | **GET** /subscriptions/sample/lead.deleted | Data sample for the \\&quot;lead.deleted\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadDocumentUploadedGet** | **GET** /subscriptions/sample/lead.document.uploaded | Data sample for the \\&quot;lead.document.uploaded\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadEmailReceivedGet** | **GET** /subscriptions/sample/lead.email.received | Data sample for the \\&quot;lead.email.received\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadNoteAddedGet** | **GET** /subscriptions/sample/lead.note.added | Data sample for the \\&quot;lead.note.added\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadRestoredGet** | **GET** /subscriptions/sample/lead.restored | Data sample for the \\&quot;lead.restored\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadStatusUpdatedGet** | **GET** /subscriptions/sample/lead.status.updated | Data sample for the \\&quot;lead.status.updated\\&quot; event
-*SubscriptionsApi* | **subscriptionsSampleLeadUpdatedGet** | **GET** /subscriptions/sample/lead.updated | Data sample for the \\&quot;lead.updated\\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleApiUpdatedGet** | **GET** /subscriptions/sample/api.updated | Data sample for the \&quot;api.updated\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleApplicationCreatedGet** | **GET** /subscriptions/sample/turboapp.submitted | Data sample for the \&quot;turboapp.submitted\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleApplicationUpdatedGet** | **GET** /subscriptions/sample/turboapp.updated | Data sample for the \&quot;turboapp.updated\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadCreatedGet** | **GET** /subscriptions/sample/lead.created | Data sample for the \&quot;lead.created\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadDeletedGet** | **GET** /subscriptions/sample/lead.deleted | Data sample for the \&quot;lead.deleted\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadDocumentUploadedGet** | **GET** /subscriptions/sample/lead.document.uploaded | Data sample for the \&quot;lead.document.uploaded\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadEmailReceivedGet** | **GET** /subscriptions/sample/lead.email.received | Data sample for the \&quot;lead.email.received\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadNoteAddedGet** | **GET** /subscriptions/sample/lead.note.added | Data sample for the \&quot;lead.note.added\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadRestoredGet** | **GET** /subscriptions/sample/lead.restored | Data sample for the \&quot;lead.restored\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadStatusUpdatedGet** | **GET** /subscriptions/sample/lead.status.updated | Data sample for the \&quot;lead.status.updated\&quot; event
+*SubscriptionsApi* | **subscriptionsSampleLeadUpdatedGet** | **GET** /subscriptions/sample/lead.updated | Data sample for the \&quot;lead.updated\&quot; event
 *SubscriptionsApi* | **subscriptionsSubscriptionIdDelete** | **DELETE** /subscriptions/{subscriptionId} | Delete a subscription
 *SubscriptionsApi* | **subscriptionsSubscriptionIdGet** | **GET** /subscriptions/{subscriptionId} | Return a subscription by its id
 *SubscriptionsApi* | **subscriptionsSubscriptionIdPatch** | **PATCH** /subscriptions/{subscriptionId} | Update a subscription
@@ -623,7 +646,7 @@ Class | Method | HTTP Request | Description
 
  #### Updated:
 
- * Renamed task priority from \"Low\" to \"Normal\" **Link:** [#/paths/~1leads~1{leadId}~1tasks/post](https://www.mycoastalpay.com/api/#/paths/~1leads~1{leadId}~1tasks/post)
+ * Renamed task priority from "Low" to "Normal" **Link:** [#/paths/~1leads~1{leadId}~1tasks/post](https://www.mycoastalpay.com/api/#/paths/~1leads~1{leadId}~1tasks/post)
 
 
 
@@ -1067,7 +1090,7 @@ Class | Method | HTTP Request | Description
 
  #### Updated:
 
- * Added a `lid` property to the \"turboapp.submitted\" subscription. **Link:** [#/paths/~1subscriptions~1sample~1turboapp.submitted/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.submitted/get)
+ * Added a `lid` property to the "turboapp.submitted" subscription. **Link:** [#/paths/~1subscriptions~1sample~1turboapp.submitted/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.submitted/get)
 
 
 
@@ -1099,15 +1122,15 @@ Class | Method | HTTP Request | Description
 
  #### Updated:
 
- * Rename subscriptions from \"application.created\" to \"turboapp.submitted\" and \"application.updated\" to \"turboapp.updated\". **Link:** [#/paths/~1subscriptions~1sample~1turboapp.submitted/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.submitted/get)
+ * Rename subscriptions from "application.created" to "turboapp.submitted" and "application.updated" to "turboapp.updated". **Link:** [#/paths/~1subscriptions~1sample~1turboapp.submitted/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.submitted/get)
 
 
 
  #### Created:
 
- * Added new subscriptions for \"turboapp.approved\" event. **Link:** [#/paths/~1subscriptions~1sample~1turboapp.approved/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.approved/get)
+ * Added new subscriptions for "turboapp.approved" event. **Link:** [#/paths/~1subscriptions~1sample~1turboapp.approved/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.approved/get)
 
- * Added new subscriptions for \"turboapp.declined\" event. **Link:** [#/paths/~1subscriptions~1sample~1turboapp.declined/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.declined/get)
+ * Added new subscriptions for "turboapp.declined" event. **Link:** [#/paths/~1subscriptions~1sample~1turboapp.declined/get](https://www.mycoastalpay.com/api/#/paths/~1subscriptions~1sample~1turboapp.declined/get)
 
 
 
@@ -1170,318 +1193,123 @@ Class | Method | HTTP Request | Description
  #### Created:
 
  * Added change log.
-
-
-This Python package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
-
-- API version: 1.0.0
-- Package version: 1.0.0
-- Build package: org.openapitools.codegen.languages.PythonClientCodegen
-
-## Requirements.
-
-Python >=3.6
-
-## Installation & Usage
-### pip install
-
-If the python package is hosted on a repository, you can install directly using:
-
-```sh
-pip install git+https://github.com/gossterrible/iris_python_sdk.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/gossterrible/iris_python_sdk.git`)
 
-Then import the package:
+## Building
+
+You must have Python `3 >=3.7, <= 3.9` installed on your system to install and run this SDK. This SDK package depends on other Python packages like nose, jsonpickle etc. These dependencies are defined in the `requirements.txt` file that comes with the SDK. To resolve these dependencies, you can use the PIP Dependency manager. Install it by following steps at [https://pip.pypa.io/en/stable/installing/](https://pip.pypa.io/en/stable/installing/).
+
+Python and PIP executables should be defined in your PATH. Open command prompt and type `pip --version`. This should display the version of the PIP Dependency Manager installed if your installation was successful and the paths are properly defined.
+
+* Using command line, navigate to the directory containing the generated files (including `requirements.txt`) for the SDK.
+* Run the command `pip install -r requirements.txt`. This should install all the required dependencies.
+
+![Building SDK - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&step=installDependencies)
+
+## Installation
+
+The following section explains how to use the coastalpayapi library in a new project.
+
+### 1. Open Project in an IDE
+
+Open up a Python IDE like PyCharm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
+
+![Open project in PyCharm - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&step=pyCharm)
+
+Click on `Open` in PyCharm to browse to your generated SDK directory and then click `OK`.
+
+![Open project in PyCharm - Step 2](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&step=openProject0)
+
+The project files will be displayed in the side bar as follows:
+
+![Open project in PyCharm - Step 3](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&projectName=coastalpayapi&step=openProject1)
+
+### 2. Add a new Test Project
+
+Create a new directory by right clicking on the solution name as shown below:
+
+![Add a new project in PyCharm - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&projectName=coastalpayapi&step=createDirectory)
+
+Name the directory as "test".
+
+![Add a new project in PyCharm - Step 2](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&step=nameDirectory)
+
+Add a python file to this project.
+
+![Add a new project in PyCharm - Step 3](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&projectName=coastalpayapi&step=createFile)
+
+Name it "testSDK".
+
+![Add a new project in PyCharm - Step 4](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&projectName=coastalpayapi&step=nameFile)
+
+In your python file you will be required to import the generated python library using the following code lines
+
 ```python
-import iriscrm
+from coastalpayapi.coastalpayapi_client import CoastalpayapiClient
 ```
 
-### Setuptools
+![Add a new project in PyCharm - Step 5](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&projectName=coastalpayapi&libraryName=coastalpayapi.coastalpayapi_client&className=CoastalpayapiClient&step=projectFiles)
 
-Install via [Setuptools](http://pypi.python.org/pypi/setuptools).
+After this you can write code to instantiate an API client object, get a controller object and  make API calls. Sample code is given in the subsequent sections.
 
-```sh
-python setup.py install --user
+### 3. Run the Test Project
+
+To run the file within your test project, right click on your Python file inside your Test project and click on `Run`
+
+![Run Test Project - Step 1](https://apidocs.io/illustration/python?workspaceFolder=Coastalpayapi-Python&projectName=coastalpayapi&libraryName=coastalpayapi.coastalpayapi_client&className=CoastalpayapiClient&step=runProject)
+
+## Test the SDK
+
+You can test the generated SDK and the server with test cases. `unittest` is used as the testing framework and `nose` is used as the test runner. You can run the tests as follows:
+
+Navigate to the root directory of the SDK and run the following commands
+
 ```
-(or `sudo python setup.py install` to install the package for all users)
+pip install -r test-requirements.txt
+nosetests
+```
 
-Then import the package:
+## Initialize the API Client
+
+**_Note:_** Documentation for the client can be found [here.](doc/client.md)
+
+The following parameters are configurable for the API Client:
+
+| Parameter | Type | Description |
+|  --- | --- | --- |
+| `http_client_instance` | `HttpClient` | The Http Client passed from the sdk user for making requests |
+| `override_http_client_configuration` | `bool` | The value which determines to override properties of the passed Http Client from the sdk user |
+| `http_call_back` | `HttpCallBack` | The callback value that is invoked before and after an HTTP call is made to an endpoint |
+| `timeout` | `float` | The value to use for connection timeout. <br> **Default: 60** |
+| `max_retries` | `int` | The number of times to retry an endpoint call if it fails. <br> **Default: 0** |
+| `backoff_factor` | `float` | A backoff factor to apply between attempts after the second try. <br> **Default: 2** |
+| `retry_statuses` | `Array of int` | The http statuses on which retry is to be done. <br> **Default: [408, 413, 429, 500, 502, 503, 504, 521, 522, 524]** |
+| `retry_methods` | `Array of string` | The http methods on which retry is to be done. <br> **Default: ['GET', 'PUT']** |
+| `x_api_key` | `string` | Authentication token |
+
+The API client can be initialized as follows:
+
 ```python
-import iriscrm
+from coastalpayapi.coastalpayapi_client import CoastalpayapiClient
+from coastalpayapi.configuration import Environment
+
+client = CoastalpayapiClient(
+    x_api_key='X-API-KEY',
+    environment=Environment.PRODUCTION,)
 ```
 
-## Getting Started
+## Authorization
 
-Please follow the [installation procedure](#installation--usage) and then run the following:
+This API uses `Custom Header Signature`.
 
-```python
+## List of APIs
 
-import time
-import iriscrm
-from pprint import pprint
-from iriscrm.api import e_signature_api
-from iriscrm.model.application_field import ApplicationField
-from iriscrm.model.brief_application_info import BriefApplicationInfo
-from iriscrm.model.leads_applications_app_id_mappings_get200_response import LeadsApplicationsAppIdMappingsGet200Response
-from iriscrm.model.leads_applications_app_id_mappings_map_id_delete200_response import LeadsApplicationsAppIdMappingsMapIdDelete200Response
-from iriscrm.model.leads_get401_response import LeadsGet401Response
-from iriscrm.model.leads_get403_response import LeadsGet403Response
-from iriscrm.model.leads_get405_response import LeadsGet405Response
-from iriscrm.model.leads_lead_id_applications_application_id_populate_post500_response import LeadsLeadIdApplicationsApplicationIdPopulatePost500Response
-from iriscrm.model.leads_lead_id_get404_response import LeadsLeadIdGet404Response
-from iriscrm.model.leads_lead_id_signatures_application_id_generate_post200_response import LeadsLeadIdSignaturesApplicationIdGeneratePost200Response
-from iriscrm.model.leads_lead_id_signatures_application_id_generate_post_request import LeadsLeadIdSignaturesApplicationIdGeneratePostRequest
-from iriscrm.model.leads_lead_id_signatures_application_id_send_post200_response import LeadsLeadIdSignaturesApplicationIdSendPost200Response
-from iriscrm.model.leads_lead_id_signatures_application_id_send_post_request import LeadsLeadIdSignaturesApplicationIdSendPostRequest
-from iriscrm.model.leads_lead_id_signatures_get200_response import LeadsLeadIdSignaturesGet200Response
-# Defining the host is optional and defaults to https://www.mycoastalpay.com/api/v1
-# See configuration.py for a list of all supported configuration parameters.
-configuration = iriscrm.Configuration(
-    host = "https://www.mycoastalpay.com/api/v1"
-)
+* [E-Signature](doc/controllers/e-signature.md)
+* [Leads](doc/controllers/leads.md)
 
-# The client must configure the authentication and authorization parameters
-# in accordance with the API server security policy.
-# Examples for each auth method are provided below, use the example that
-# satisfies your auth use case.
+## Classes Documentation
 
-# Configure API key authorization: Token
-configuration.api_key['Token'] = 'YOUR_API_KEY'
-
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['Token'] = 'Bearer'
-
-
-# Enter a context with an instance of the API client
-with iriscrm.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = e_signature_api.ESignatureApi(api_client)
-    app_id = 1 # int | Application Id
-    page = 1 # int | Page number (optional)
-    per_page = 10 # int | Count of records per page (optional)
-
-    try:
-        # Get a list of available application field mappings
-        api_response = api_instance.leads_applications_app_id_mappings_get(app_id, page=page, per_page=per_page)
-        pprint(api_response)
-    except iriscrm.ApiException as e:
-        print("Exception when calling ESignatureApi->leads_applications_app_id_mappings_get: %s\n" % e)
-```
-
-## Documentation for API Endpoints
-
-All URIs are relative to *https://www.mycoastalpay.com/api/v1*
-
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*ESignatureApi* | [**leads_applications_app_id_mappings_get**](docs/ESignatureApi.md#leads_applications_app_id_mappings_get) | **GET** /leads/applications/{appId}/mappings | Get a list of available application field mappings
-*ESignatureApi* | [**leads_applications_app_id_mappings_map_id_delete**](docs/ESignatureApi.md#leads_applications_app_id_mappings_map_id_delete) | **DELETE** /leads/applications/{appId}/mappings/{mapId} | Delete an application field mapping
-*ESignatureApi* | [**leads_applications_app_id_mappings_map_id_get**](docs/ESignatureApi.md#leads_applications_app_id_mappings_map_id_get) | **GET** /leads/applications/{appId}/mappings/{mapId} | Get an application field mapping list
-*ESignatureApi* | [**leads_applications_app_id_mappings_map_id_patch**](docs/ESignatureApi.md#leads_applications_app_id_mappings_map_id_patch) | **PATCH** /leads/applications/{appId}/mappings/{mapId} | Update an application field mapping
-*ESignatureApi* | [**leads_applications_app_id_mappings_post**](docs/ESignatureApi.md#leads_applications_app_id_mappings_post) | **POST** /leads/applications/{appId}/mappings | Create a new application field mapping
-*ESignatureApi* | [**leads_applications_get**](docs/ESignatureApi.md#leads_applications_get) | **GET** /leads/applications | Get a list of available applications
-*ESignatureApi* | [**leads_lead_id_signatures_application_id_generate_post**](docs/ESignatureApi.md#leads_lead_id_signatures_application_id_generate_post) | **POST** /leads/{leadId}/signatures/{applicationId}/generate | Generate an e-signature document
-*ESignatureApi* | [**leads_lead_id_signatures_application_id_send_post**](docs/ESignatureApi.md#leads_lead_id_signatures_application_id_send_post) | **POST** /leads/{leadId}/signatures/{applicationId}/send | Send an e-signature document
-*ESignatureApi* | [**leads_lead_id_signatures_get**](docs/ESignatureApi.md#leads_lead_id_signatures_get) | **GET** /leads/{leadId}/signatures | Get a list of all lead e-signatures documents
-*ESignatureApi* | [**leads_signatures_application_id_download_get**](docs/ESignatureApi.md#leads_signatures_application_id_download_get) | **GET** /leads/signatures/{applicationId}/download | Download an e-signature document
-*LeadsApi* | [**leads_campaigns_get**](docs/LeadsApi.md#leads_campaigns_get) | **GET** /leads/campaigns | Get a list of available campaigns
-*LeadsApi* | [**leads_emails_templates_get**](docs/LeadsApi.md#leads_emails_templates_get) | **GET** /leads/emails/templates | Get a list of email templates
-*LeadsApi* | [**leads_fields_field_id_get**](docs/LeadsApi.md#leads_fields_field_id_get) | **GET** /leads/fields/{fieldId} | Get a lead field
-*LeadsApi* | [**leads_fields_field_id_order_patch**](docs/LeadsApi.md#leads_fields_field_id_order_patch) | **PATCH** /leads/fields/{fieldId}/order | Update a lead field order position
-*LeadsApi* | [**leads_fields_field_id_patch**](docs/LeadsApi.md#leads_fields_field_id_patch) | **PATCH** /leads/fields/{fieldId} | Update a lead field
-*LeadsApi* | [**leads_fields_get**](docs/LeadsApi.md#leads_fields_get) | **GET** /leads/fields | Get a list of available lead fields
-*LeadsApi* | [**leads_fields_post**](docs/LeadsApi.md#leads_fields_post) | **POST** /leads/fields | Create a new lead field
-*LeadsApi* | [**leads_fields_tabs_get**](docs/LeadsApi.md#leads_fields_tabs_get) | **GET** /leads/fields/tabs | Get a list of all lead field tabs
-*LeadsApi* | [**leads_fields_tabs_post**](docs/LeadsApi.md#leads_fields_tabs_post) | **POST** /leads/fields/tabs | Create a lead field tab
-*LeadsApi* | [**leads_fields_tabs_tab_id_get**](docs/LeadsApi.md#leads_fields_tabs_tab_id_get) | **GET** /leads/fields/tabs/{tabId} | Get a lead field tab
-*LeadsApi* | [**leads_fields_tabs_tab_id_patch**](docs/LeadsApi.md#leads_fields_tabs_tab_id_patch) | **PATCH** /leads/fields/tabs/{tabId} | Update a lead field tab
-*LeadsApi* | [**leads_file_labels_get**](docs/LeadsApi.md#leads_file_labels_get) | **GET** /leads/file_labels | Get a list of available document labels
-*LeadsApi* | [**leads_get**](docs/LeadsApi.md#leads_get) | **GET** /leads | Get a list of leads
-*LeadsApi* | [**leads_groups_get**](docs/LeadsApi.md#leads_groups_get) | **GET** /leads/groups | Get a list of available groups
-*LeadsApi* | [**leads_lead_id_activity_campaign_get**](docs/LeadsApi.md#leads_lead_id_activity_campaign_get) | **GET** /leads/{leadId}/activity/campaign | Get a list of all lead campaign activity
-*LeadsApi* | [**leads_lead_id_activity_deletion_get**](docs/LeadsApi.md#leads_lead_id_activity_deletion_get) | **GET** /leads/{leadId}/activity/deletion | Get a list of all lead deletion activity
-*LeadsApi* | [**leads_lead_id_activity_duplicates_get**](docs/LeadsApi.md#leads_lead_id_activity_duplicates_get) | **GET** /leads/{leadId}/activity/duplicates | Get a list of all lead duplicate activity
-*LeadsApi* | [**leads_lead_id_activity_links_get**](docs/LeadsApi.md#leads_lead_id_activity_links_get) | **GET** /leads/{leadId}/activity/links | Get a list of all lead links activity
-*LeadsApi* | [**leads_lead_id_activity_source_get**](docs/LeadsApi.md#leads_lead_id_activity_source_get) | **GET** /leads/{leadId}/activity/source | Get a list of all lead source activity
-*LeadsApi* | [**leads_lead_id_activity_status_get**](docs/LeadsApi.md#leads_lead_id_activity_status_get) | **GET** /leads/{leadId}/activity/status | Get a list of all lead status activity
-*LeadsApi* | [**leads_lead_id_applications_application_id_populate_post**](docs/LeadsApi.md#leads_lead_id_applications_application_id_populate_post) | **POST** /leads/{leadId}/applications/{applicationId}/populate | Populate PDF Document
-*LeadsApi* | [**leads_lead_id_appointments_get**](docs/LeadsApi.md#leads_lead_id_appointments_get) | **GET** /leads/{leadId}/appointments | Get lead appointments
-*LeadsApi* | [**leads_lead_id_appointments_post**](docs/LeadsApi.md#leads_lead_id_appointments_post) | **POST** /leads/{leadId}/appointments | Create a lead appointment
-*LeadsApi* | [**leads_lead_id_documents_document_id_get**](docs/LeadsApi.md#leads_lead_id_documents_document_id_get) | **GET** /leads/{leadId}/documents/{documentId} | Download a document
-*LeadsApi* | [**leads_lead_id_documents_get**](docs/LeadsApi.md#leads_lead_id_documents_get) | **GET** /leads/{leadId}/documents | Get a list of available documents
-*LeadsApi* | [**leads_lead_id_documents_post**](docs/LeadsApi.md#leads_lead_id_documents_post) | **POST** /leads/{leadId}/documents | Upload a document
-*LeadsApi* | [**leads_lead_id_emails_template_id_post**](docs/LeadsApi.md#leads_lead_id_emails_template_id_post) | **POST** /leads/{leadId}/emails/{templateId} | Send an email to lead with template
-*LeadsApi* | [**leads_lead_id_get**](docs/LeadsApi.md#leads_lead_id_get) | **GET** /leads/{leadId} | Get detailed lead information
-*LeadsApi* | [**leads_lead_id_mailbox_email_id_attachment_attachment_id_get**](docs/LeadsApi.md#leads_lead_id_mailbox_email_id_attachment_attachment_id_get) | **GET** /leads/{leadId}/mailbox/{emailId}/attachment/{attachmentId} | Download a mailbox email attachment
-*LeadsApi* | [**leads_lead_id_notes_get**](docs/LeadsApi.md#leads_lead_id_notes_get) | **GET** /leads/{leadId}/notes | Get lead notes
-*LeadsApi* | [**leads_lead_id_notes_post**](docs/LeadsApi.md#leads_lead_id_notes_post) | **POST** /leads/{leadId}/notes | Create a lead note
-*LeadsApi* | [**leads_lead_id_patch**](docs/LeadsApi.md#leads_lead_id_patch) | **PATCH** /leads/{leadId} | Update a lead
-*LeadsApi* | [**leads_lead_id_records_cat_id_record_id_delete**](docs/LeadsApi.md#leads_lead_id_records_cat_id_record_id_delete) | **DELETE** /leads/{leadId}/records/{catId}/{recordId} | Delete record from a lead record set
-*LeadsApi* | [**leads_lead_id_sms_template_id_post**](docs/LeadsApi.md#leads_lead_id_sms_template_id_post) | **POST** /leads/{leadId}/sms/{templateId} | Send an SMS to lead with selected SMS template
-*LeadsApi* | [**leads_lead_id_tabs_tab_id_fields_get**](docs/LeadsApi.md#leads_lead_id_tabs_tab_id_fields_get) | **GET** /leads/{leadId}/tabs/{tabId}/fields | Get lead information from a specific tab
-*LeadsApi* | [**leads_lead_id_tasks_get**](docs/LeadsApi.md#leads_lead_id_tasks_get) | **GET** /leads/{leadId}/tasks | Get lead tasks
-*LeadsApi* | [**leads_lead_id_tasks_post**](docs/LeadsApi.md#leads_lead_id_tasks_post) | **POST** /leads/{leadId}/tasks | Create a lead task
-*LeadsApi* | [**leads_lead_id_users_get**](docs/LeadsApi.md#leads_lead_id_users_get) | **GET** /leads/{leadId}/users | Get a list of assigned users
-*LeadsApi* | [**leads_lead_id_users_post**](docs/LeadsApi.md#leads_lead_id_users_post) | **POST** /leads/{leadId}/users | Assign a user
-*LeadsApi* | [**leads_lead_id_users_user_id_delete**](docs/LeadsApi.md#leads_lead_id_users_user_id_delete) | **DELETE** /leads/{leadId}/users/{userId} | Unassign a user from a lead
-*LeadsApi* | [**leads_post**](docs/LeadsApi.md#leads_post) | **POST** /leads | Create a lead
-*LeadsApi* | [**leads_pricing_templates_get**](docs/LeadsApi.md#leads_pricing_templates_get) | **GET** /leads/pricing_templates | Get pricing templates
-*LeadsApi* | [**leads_sms_templates_get**](docs/LeadsApi.md#leads_sms_templates_get) | **GET** /leads/sms/templates | Get list of SMS templates
-*LeadsApi* | [**leads_sources_get**](docs/LeadsApi.md#leads_sources_get) | **GET** /leads/sources | Get a list of available sources
-*LeadsApi* | [**leads_statuses_get**](docs/LeadsApi.md#leads_statuses_get) | **GET** /leads/statuses | Get a list of available statuses
-*LeadsApi* | [**leads_users_get**](docs/LeadsApi.md#leads_users_get) | **GET** /leads/users | Get a list of available users
-
-
-## Documentation For Models
-
- - [ApplicationField](docs/ApplicationField.md)
- - [ApplicationFieldInfoInner](docs/ApplicationFieldInfoInner.md)
- - [ApplicationFieldInfoInnerDuplicatesInner](docs/ApplicationFieldInfoInnerDuplicatesInner.md)
- - [BriefApplicationInfo](docs/BriefApplicationInfo.md)
- - [BriefCampaignInfo](docs/BriefCampaignInfo.md)
- - [BriefCategoryInfo](docs/BriefCategoryInfo.md)
- - [BriefEmailTemplate](docs/BriefEmailTemplate.md)
- - [BriefGroupInfo](docs/BriefGroupInfo.md)
- - [BriefLeadInfo](docs/BriefLeadInfo.md)
- - [BriefSmsTemplate](docs/BriefSmsTemplate.md)
- - [BriefSourceInfo](docs/BriefSourceInfo.md)
- - [BriefStatusInfo](docs/BriefStatusInfo.md)
- - [BriefTabInfo](docs/BriefTabInfo.md)
- - [BriefUserInfo](docs/BriefUserInfo.md)
- - [BriefUserInfoWithClass](docs/BriefUserInfoWithClass.md)
- - [CampaignActivity](docs/CampaignActivity.md)
- - [CategoryWithStatuses](docs/CategoryWithStatuses.md)
- - [DeletionActivity](docs/DeletionActivity.md)
- - [DuplicateActivity](docs/DuplicateActivity.md)
- - [FileLabel](docs/FileLabel.md)
- - [LeadAppointment](docs/LeadAppointment.md)
- - [LeadField](docs/LeadField.md)
- - [LeadFieldOptions](docs/LeadFieldOptions.md)
- - [LeadFieldOptionsCopy](docs/LeadFieldOptionsCopy.md)
- - [LeadFieldOptionsDropdown](docs/LeadFieldOptionsDropdown.md)
- - [LeadFieldOptionsZipcodeAutocomplete](docs/LeadFieldOptionsZipcodeAutocomplete.md)
- - [LeadFieldOrder](docs/LeadFieldOrder.md)
- - [LeadFieldTab](docs/LeadFieldTab.md)
- - [LeadFieldValue](docs/LeadFieldValue.md)
- - [LeadsApplicationsAppIdMappingsGet200Response](docs/LeadsApplicationsAppIdMappingsGet200Response.md)
- - [LeadsApplicationsAppIdMappingsMapIdDelete200Response](docs/LeadsApplicationsAppIdMappingsMapIdDelete200Response.md)
- - [LeadsCampaignsGet200Response](docs/LeadsCampaignsGet200Response.md)
- - [LeadsEmailsTemplatesGet200Response](docs/LeadsEmailsTemplatesGet200Response.md)
- - [LeadsFieldsFieldIdOrderPatch200Response](docs/LeadsFieldsFieldIdOrderPatch200Response.md)
- - [LeadsFieldsGet200Response](docs/LeadsFieldsGet200Response.md)
- - [LeadsFieldsGetRequest](docs/LeadsFieldsGetRequest.md)
- - [LeadsFieldsGetRequestAllOf](docs/LeadsFieldsGetRequestAllOf.md)
- - [LeadsFieldsTabsGet200Response](docs/LeadsFieldsTabsGet200Response.md)
- - [LeadsFileLabelsGet200Response](docs/LeadsFileLabelsGet200Response.md)
- - [LeadsGet200Response](docs/LeadsGet200Response.md)
- - [LeadsGet200Response1](docs/LeadsGet200Response1.md)
- - [LeadsGet401Response](docs/LeadsGet401Response.md)
- - [LeadsGet403Response](docs/LeadsGet403Response.md)
- - [LeadsGet405Response](docs/LeadsGet405Response.md)
- - [LeadsGetRequest](docs/LeadsGetRequest.md)
- - [LeadsGetRequestFieldsInner](docs/LeadsGetRequestFieldsInner.md)
- - [LeadsGroupsGet200Response](docs/LeadsGroupsGet200Response.md)
- - [LeadsLeadIdActivityCampaignGet200Response](docs/LeadsLeadIdActivityCampaignGet200Response.md)
- - [LeadsLeadIdActivityDeletionGet200Response](docs/LeadsLeadIdActivityDeletionGet200Response.md)
- - [LeadsLeadIdActivityDuplicatesGet200Response](docs/LeadsLeadIdActivityDuplicatesGet200Response.md)
- - [LeadsLeadIdActivityLinksGet200Response](docs/LeadsLeadIdActivityLinksGet200Response.md)
- - [LeadsLeadIdActivitySourceGet200Response](docs/LeadsLeadIdActivitySourceGet200Response.md)
- - [LeadsLeadIdActivityStatusGet200Response](docs/LeadsLeadIdActivityStatusGet200Response.md)
- - [LeadsLeadIdApplicationsApplicationIdPopulatePost200Response](docs/LeadsLeadIdApplicationsApplicationIdPopulatePost200Response.md)
- - [LeadsLeadIdApplicationsApplicationIdPopulatePost500Response](docs/LeadsLeadIdApplicationsApplicationIdPopulatePost500Response.md)
- - [LeadsLeadIdAppointmentsGet200Response](docs/LeadsLeadIdAppointmentsGet200Response.md)
- - [LeadsLeadIdAppointmentsGet200Response1](docs/LeadsLeadIdAppointmentsGet200Response1.md)
- - [LeadsLeadIdAppointmentsGetRequest](docs/LeadsLeadIdAppointmentsGetRequest.md)
- - [LeadsLeadIdDocumentsGet200Response](docs/LeadsLeadIdDocumentsGet200Response.md)
- - [LeadsLeadIdDocumentsGet200ResponseDataInner](docs/LeadsLeadIdDocumentsGet200ResponseDataInner.md)
- - [LeadsLeadIdDocumentsGet200ResponseDataInnerLabel](docs/LeadsLeadIdDocumentsGet200ResponseDataInnerLabel.md)
- - [LeadsLeadIdDocumentsGet200ResponseDataInnerTab](docs/LeadsLeadIdDocumentsGet200ResponseDataInnerTab.md)
- - [LeadsLeadIdEmailsTemplateIdPost200Response](docs/LeadsLeadIdEmailsTemplateIdPost200Response.md)
- - [LeadsLeadIdEmailsTemplateIdPostRequest](docs/LeadsLeadIdEmailsTemplateIdPostRequest.md)
- - [LeadsLeadIdEmailsTemplateIdPostRequestOneOf](docs/LeadsLeadIdEmailsTemplateIdPostRequestOneOf.md)
- - [LeadsLeadIdEmailsTemplateIdPostRequestOneOf1](docs/LeadsLeadIdEmailsTemplateIdPostRequestOneOf1.md)
- - [LeadsLeadIdGet200Response](docs/LeadsLeadIdGet200Response.md)
- - [LeadsLeadIdGet200Response1](docs/LeadsLeadIdGet200Response1.md)
- - [LeadsLeadIdGet200ResponseDetailsInner](docs/LeadsLeadIdGet200ResponseDetailsInner.md)
- - [LeadsLeadIdGet404Response](docs/LeadsLeadIdGet404Response.md)
- - [LeadsLeadIdGetRequest](docs/LeadsLeadIdGetRequest.md)
- - [LeadsLeadIdNotesGet200Response](docs/LeadsLeadIdNotesGet200Response.md)
- - [LeadsLeadIdNotesGet200Response1](docs/LeadsLeadIdNotesGet200Response1.md)
- - [LeadsLeadIdNotesGet200ResponseDataInner](docs/LeadsLeadIdNotesGet200ResponseDataInner.md)
- - [LeadsLeadIdNotesGetRequest](docs/LeadsLeadIdNotesGetRequest.md)
- - [LeadsLeadIdRecordsCatIdRecordIdDelete200Response](docs/LeadsLeadIdRecordsCatIdRecordIdDelete200Response.md)
- - [LeadsLeadIdSignaturesApplicationIdGeneratePost200Response](docs/LeadsLeadIdSignaturesApplicationIdGeneratePost200Response.md)
- - [LeadsLeadIdSignaturesApplicationIdGeneratePostRequest](docs/LeadsLeadIdSignaturesApplicationIdGeneratePostRequest.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPost200Response](docs/LeadsLeadIdSignaturesApplicationIdSendPost200Response.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPostRequest](docs/LeadsLeadIdSignaturesApplicationIdSendPostRequest.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInner](docs/LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInner.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf](docs/LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf1](docs/LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf1.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf2](docs/LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf2.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf3](docs/LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf3.md)
- - [LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf4](docs/LeadsLeadIdSignaturesApplicationIdSendPostRequestRecipientsInnerAnyOf4.md)
- - [LeadsLeadIdSignaturesGet200Response](docs/LeadsLeadIdSignaturesGet200Response.md)
- - [LeadsLeadIdSignaturesGet200ResponseDataInner](docs/LeadsLeadIdSignaturesGet200ResponseDataInner.md)
- - [LeadsLeadIdSmsTemplateIdPost200Response](docs/LeadsLeadIdSmsTemplateIdPost200Response.md)
- - [LeadsLeadIdSmsTemplateIdPostRequest](docs/LeadsLeadIdSmsTemplateIdPostRequest.md)
- - [LeadsLeadIdSmsTemplateIdPostRequestOneOf](docs/LeadsLeadIdSmsTemplateIdPostRequestOneOf.md)
- - [LeadsLeadIdSmsTemplateIdPostRequestOneOf1](docs/LeadsLeadIdSmsTemplateIdPostRequestOneOf1.md)
- - [LeadsLeadIdTabsTabIdFieldsGet200Response](docs/LeadsLeadIdTabsTabIdFieldsGet200Response.md)
- - [LeadsLeadIdTasksGet200Response](docs/LeadsLeadIdTasksGet200Response.md)
- - [LeadsLeadIdTasksGet200Response1](docs/LeadsLeadIdTasksGet200Response1.md)
- - [LeadsLeadIdTasksGet200ResponseDataInner](docs/LeadsLeadIdTasksGet200ResponseDataInner.md)
- - [LeadsLeadIdTasksGetRequest](docs/LeadsLeadIdTasksGetRequest.md)
- - [LeadsLeadIdUsersGet200Response](docs/LeadsLeadIdUsersGet200Response.md)
- - [LeadsLeadIdUsersGet200Response1](docs/LeadsLeadIdUsersGet200Response1.md)
- - [LeadsLeadIdUsersGetRequest](docs/LeadsLeadIdUsersGetRequest.md)
- - [LeadsLeadIdUsersGetRequestOneOf](docs/LeadsLeadIdUsersGetRequestOneOf.md)
- - [LeadsLeadIdUsersGetRequestOneOf1](docs/LeadsLeadIdUsersGetRequestOneOf1.md)
- - [LeadsLeadIdUsersUserIdDelete200Response](docs/LeadsLeadIdUsersUserIdDelete200Response.md)
- - [LeadsPricingTemplatesGet200Response](docs/LeadsPricingTemplatesGet200Response.md)
- - [LeadsPricingTemplatesGet200ResponseDataInner](docs/LeadsPricingTemplatesGet200ResponseDataInner.md)
- - [LeadsPricingTemplatesGet200ResponseDataInnerValuesInner](docs/LeadsPricingTemplatesGet200ResponseDataInnerValuesInner.md)
- - [LeadsSmsTemplatesGet200Response](docs/LeadsSmsTemplatesGet200Response.md)
- - [LeadsSourcesGet200Response](docs/LeadsSourcesGet200Response.md)
- - [LeadsStatusesGet200Response](docs/LeadsStatusesGet200Response.md)
- - [Links](docs/Links.md)
- - [LinksActivity](docs/LinksActivity.md)
- - [Meta](docs/Meta.md)
- - [SourceActivity](docs/SourceActivity.md)
- - [StatusActivity](docs/StatusActivity.md)
-
-
-## Documentation For Authorization
-
-
-## Token
-
-- **Type**: API key
-- **API key parameter name**: X-API-KEY
-- **Location**: HTTP header
-
-
-## Author
-
-helpdesk@coastalpay.com
-
-
-## Notes for Large OpenAPI documents
-If the OpenAPI document is large, imports in iriscrm.apis and iriscrm.models may fail with a
-RecursionError indicating the maximum recursion limit has been exceeded. In that case, there are a couple of solutions:
-
-Solution 1:
-Use specific imports for apis and models like:
-- `from iriscrm.api.default_api import DefaultApi`
-- `from iriscrm.model.pet import Pet`
-
-Solution 2:
-Before importing the package, adjust the maximum recursion limit as shown below:
-```
-import sys
-sys.setrecursionlimit(1500)
-import iriscrm
-from iriscrm.apis import *
-from iriscrm.models import *
-```
+* [Utility Classes](doc/utility-classes.md)
+* [HttpResponse](doc/http-response.md)
+* [HttpRequest](doc/http-request.md)
 

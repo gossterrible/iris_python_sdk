@@ -1,0 +1,16 @@
+{
+  "id": "Label",
+  "title": "Label",
+  "type": "object",
+  "properties": {
+    "id": {
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "example": "Label name",
+      "type": "string"
+    }
+  }
+}

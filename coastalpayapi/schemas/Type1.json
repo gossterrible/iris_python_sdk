@@ -1,0 +1,25 @@
+{
+  "title": "Type1",
+  "description": "Type of changing order position",
+  "example": "increment",
+  "x-enum-elements": [
+    {
+      "name": "increment",
+      "description": ""
+    },
+    {
+      "name": "decrement",
+      "description": ""
+    },
+    {
+      "name": "null",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "increment",
+    "decrement",
+    "null"
+  ]
+}

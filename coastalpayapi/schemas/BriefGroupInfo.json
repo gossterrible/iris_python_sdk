@@ -1,0 +1,16 @@
+{
+  "id": "BriefGroupInfo",
+  "title": "BriefGroupInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Group Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Group name",
+      "type": "string"
+    }
+  }
+}

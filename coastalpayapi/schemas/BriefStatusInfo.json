@@ -1,0 +1,16 @@
+{
+  "id": "BriefStatusInfo",
+  "title": "BriefStatusInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Status Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Status name",
+      "type": "string"
+    }
+  }
+}

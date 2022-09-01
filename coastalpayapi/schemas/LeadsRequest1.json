@@ -1,0 +1,38 @@
+{
+  "id": "LeadsRequest1",
+  "title": "LeadsRequest1",
+  "type": "object",
+  "properties": {
+    "campaign": {
+      "description": "Campaign Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "description": "Status Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "source": {
+      "description": "Source Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "group": {
+      "description": "Group Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "fields": {
+      "description": "Lead fields",
+      "type": "array",
+      "items": {
+        "$ref": "Field.json"
+      }
+    }
+  }
+}

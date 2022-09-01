@@ -1,0 +1,65 @@
+{
+  "id": "LeadsRequest",
+  "title": "LeadsRequest",
+  "type": "object",
+  "properties": {
+    "campaign": {
+      "description": "Campaign Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "description": "Status Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "source": {
+      "description": "Source Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "group": {
+      "description": "Group Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "users": {
+      "description": "Ids of users to assign to a new lead",
+      "example": [
+        1,
+        2
+      ],
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "users_emails": {
+      "description": "Emails of users to assign to a new lead",
+      "example": [
+        "aaa@example.com",
+        "bbb@example.com"
+      ],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fields": {
+      "description": "Lead fields",
+      "type": "array",
+      "items": {
+        "$ref": "Field.json"
+      }
+    }
+  },
+  "required": [
+    "status",
+    "fields"
+  ]
+}

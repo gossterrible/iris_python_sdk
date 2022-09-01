@@ -1,0 +1,18 @@
+{
+  "id": "LeadsResponse",
+  "title": "LeadsResponse",
+  "type": "object",
+  "properties": {
+    "leadId": {
+      "description": "Lead Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "message": {
+      "description": "Result message",
+      "example": "The lead (1) has been created successfully",
+      "type": "string"
+    }
+  }
+}

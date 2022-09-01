@@ -1,0 +1,16 @@
+{
+  "id": "BriefTabInfo",
+  "title": "BriefTabInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Tab Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Tab name",
+      "type": "string"
+    }
+  }
+}

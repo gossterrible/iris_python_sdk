@@ -1,0 +1,38 @@
+{
+  "id": "BriefUserInfoWithClass",
+  "title": "BriefUserInfoWithClass",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "User Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "username": {
+      "description": "User username",
+      "example": "manager1",
+      "type": "string"
+    },
+    "full_name": {
+      "description": "User name",
+      "example": "John Doe",
+      "type": "string"
+    },
+    "email": {
+      "description": "User email",
+      "example": "example@www.mycoastalpay.com",
+      "type": "string"
+    },
+    "status": {
+      "description": "User status",
+      "example": "active",
+      "type": "string"
+    },
+    "class": {
+      "description": "User class",
+      "example": "Manager",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "BriefCampaignInfo",
+  "title": "BriefCampaignInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Campaign Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Campaign name",
+      "type": "string"
+    }
+  }
+}

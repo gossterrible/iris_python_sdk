@@ -1,0 +1,23 @@
+{
+  "id": "Datum4",
+  "title": "Datum4",
+  "type": "object",
+  "properties": {
+    "status": {
+      "example": "Generated",
+      "type": "string"
+    },
+    "url": {
+      "example": "https://www.mycoastalpay.com/sign/91391fe5",
+      "type": "string"
+    },
+    "templateId": {
+      "example": "E-signature template",
+      "type": "string"
+    },
+    "templateName": {
+      "example": "E-signature name",
+      "type": "string"
+    }
+  }
+}

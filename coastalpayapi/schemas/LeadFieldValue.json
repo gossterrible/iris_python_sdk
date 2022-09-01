@@ -1,0 +1,25 @@
+{
+  "id": "LeadFieldValue",
+  "title": "LeadFieldValue",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "description": "Field unique Id",
+      "example": 4567,
+      "type": "integer",
+      "format": "int32"
+    },
+    "id": {
+      "description": "Field Id",
+      "type": "string"
+    },
+    "field": {
+      "description": "Field name",
+      "type": "string"
+    },
+    "value": {
+      "description": "Field value",
+      "type": "string"
+    }
+  }
+}

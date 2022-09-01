@@ -1,0 +1,11 @@
+{
+  "id": "LeadsTasksResponse",
+  "title": "LeadsTasksResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "example": "Task has been created successfully",
+      "type": "string"
+    }
+  }
+}

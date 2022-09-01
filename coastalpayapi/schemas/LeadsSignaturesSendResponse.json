@@ -1,0 +1,28 @@
+{
+  "id": "LeadsSignaturesSendResponse",
+  "title": "LeadsSignaturesSendResponse",
+  "type": "object",
+  "properties": {
+    "message": {
+      "description": "Result message",
+      "example": "E-signature documented was generated and sent to email successfully.",
+      "type": "string"
+    },
+    "emailId": {
+      "description": "Id of email what was sent",
+      "example": 11,
+      "type": "integer",
+      "format": "int32"
+    },
+    "hash": {
+      "description": "E-Sign hash",
+      "example": "91391fe5",
+      "type": "string"
+    },
+    "url": {
+      "description": "E-Sign URL",
+      "example": "https://www.mycoastalpay.com/sign/91391fe5",
+      "type": "string"
+    }
+  }
+}

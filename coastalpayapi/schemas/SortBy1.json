@@ -1,0 +1,78 @@
+{
+  "title": "SortBy1",
+  "x-enum-elements": [
+    {
+      "name": "id",
+      "description": ""
+    },
+    {
+      "name": "set_for",
+      "description": ""
+    },
+    {
+      "name": "set_at",
+      "description": ""
+    },
+    {
+      "name": "set_by",
+      "description": ""
+    },
+    {
+      "name": "modified",
+      "description": ""
+    },
+    {
+      "name": "modified_by",
+      "description": ""
+    },
+    {
+      "name": "date",
+      "description": ""
+    },
+    {
+      "name": "date_end",
+      "description": ""
+    },
+    {
+      "name": "confirmed",
+      "description": ""
+    },
+    {
+      "name": "confirmed_by",
+      "description": ""
+    },
+    {
+      "name": "seen",
+      "description": ""
+    },
+    {
+      "name": "seen_by",
+      "description": ""
+    },
+    {
+      "name": "rescheduled",
+      "description": ""
+    },
+    {
+      "name": "rescheduled_by",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "id",
+    "set_for",
+    "set_at",
+    "set_by",
+    "modified",
+    "modified_by",
+    "date",
+    "date_end",
+    "confirmed",
+    "confirmed_by",
+    "seen",
+    "seen_by",
+    "rescheduled",
+    "rescheduled_by"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "LeadsSmsRequest1",
+  "title": "LeadsSmsRequest1",
+  "type": "object",
+  "properties": {
+    "phone": {
+      "example": "206-206-2623",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "Recipient1",
+  "title": "Recipient1",
+  "type": "object",
+  "properties": {
+    "email": {
+      "description": "Recipient Email",
+      "example": "example@www.mycoastalpay.com",
+      "type": "string"
+    },
+    "name": {
+      "description": "Recipient Name",
+      "example": "John Doe",
+      "type": "string"
+    }
+  }
+}

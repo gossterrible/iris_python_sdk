@@ -1,0 +1,20 @@
+{
+  "id": "LeadsApplicationsMappingsResponse",
+  "title": "LeadsApplicationsMappingsResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "ApplicationField.json"
+      }
+    },
+    "links": {
+      "$ref": "Links.json"
+    },
+    "meta": {
+      "$ref": "Meta.json"
+    }
+  }
+}

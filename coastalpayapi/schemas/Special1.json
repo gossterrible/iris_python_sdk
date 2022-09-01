@@ -1,0 +1,75 @@
+{
+  "title": "Special1",
+  "description": "Special type of mapped field",
+  "example": "chk",
+  "x-enum-elements": [
+    {
+      "name": "null",
+      "description": ""
+    },
+    {
+      "name": "chk",
+      "description": ""
+    },
+    {
+      "name": "d2t",
+      "description": ""
+    },
+    {
+      "name": "salesrep",
+      "description": ""
+    },
+    {
+      "name": "salesrep_position",
+      "description": ""
+    },
+    {
+      "name": "salesrep_email",
+      "description": ""
+    },
+    {
+      "name": "salesrep_phone",
+      "description": ""
+    },
+    {
+      "name": "salesrep_mobile",
+      "description": ""
+    },
+    {
+      "name": "salesrep_fax",
+      "description": ""
+    },
+    {
+      "name": "salesrep_ext",
+      "description": ""
+    },
+    {
+      "name": "leading_comma",
+      "description": ""
+    },
+    {
+      "name": "date_mdY",
+      "description": ""
+    },
+    {
+      "name": "date_mdy1",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "null",
+    "chk",
+    "d2t",
+    "salesrep",
+    "salesrep_position",
+    "salesrep_email",
+    "salesrep_phone",
+    "salesrep_mobile",
+    "salesrep_fax",
+    "salesrep_ext",
+    "leading_comma",
+    "date_mdY",
+    "date_mdy"
+  ]
+}

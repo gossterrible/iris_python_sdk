@@ -1,0 +1,12 @@
+{
+  "id": "LeadsSignaturesGenerateRequest",
+  "title": "LeadsSignaturesGenerateRequest",
+  "type": "object",
+  "properties": {
+    "expire": {
+      "description": "Expire the previously generated application",
+      "example": true,
+      "type": "boolean"
+    }
+  }
+}

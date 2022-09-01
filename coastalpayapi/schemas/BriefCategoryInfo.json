@@ -1,0 +1,16 @@
+{
+  "id": "BriefCategoryInfo",
+  "title": "BriefCategoryInfo",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Status category Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "description": "Status category name",
+      "type": "string"
+    }
+  }
+}

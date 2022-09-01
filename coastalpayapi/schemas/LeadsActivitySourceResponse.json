@@ -1,0 +1,20 @@
+{
+  "id": "LeadsActivitySourceResponse",
+  "title": "LeadsActivitySourceResponse",
+  "type": "object",
+  "properties": {
+    "data": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "$ref": "SourceActivity.json"
+      }
+    },
+    "links": {
+      "$ref": "Links.json"
+    },
+    "meta": {
+      "$ref": "Meta.json"
+    }
+  }
+}

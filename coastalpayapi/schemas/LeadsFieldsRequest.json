@@ -1,0 +1,111 @@
+{
+  "id": "LeadsFieldsRequest",
+  "title": "LeadsFieldsRequest",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Field Id",
+      "example": 1,
+      "readOnly": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    "tab": {
+      "description": "Field tab Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "label": {
+      "description": "Field label",
+      "example": "New Field",
+      "type": "string"
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "Type.json"
+        },
+        {
+          "description": "Field type",
+          "example": "Select"
+        }
+      ]
+    },
+    "length": {
+      "description": "Field size",
+      "example": 10,
+      "type": "integer",
+      "format": "int32"
+    },
+    "default": {
+      "description": "Field default value",
+      "example": "Some Value",
+      "type": "string"
+    },
+    "alignment": {
+      "allOf": [
+        {
+          "$ref": "Alignment.json"
+        },
+        {
+          "description": "Field alignment",
+          "example": "left"
+        }
+      ]
+    },
+    "searchable": {
+      "allOf": [
+        {
+          "$ref": "Searchable.json"
+        },
+        {
+          "description": "Searchable field",
+          "example": 1
+        }
+      ]
+    },
+    "special": {
+      "allOf": [
+        {
+          "$ref": "Special.json"
+        },
+        {
+          "description": "Field special value",
+          "example": "dba"
+        }
+      ]
+    },
+    "options": {
+      "$ref": "Options.json"
+    },
+    "order": {
+      "example": 1,
+      "readOnly": true,
+      "type": "integer",
+      "format": "int32"
+    },
+    "readOnly": {
+      "description": "Whether the field is read only",
+      "example": false,
+      "readOnly": true,
+      "type": "boolean"
+    },
+    "required": {
+      "description": "Whether the field is required",
+      "example": true,
+      "readOnly": true,
+      "type": "boolean"
+    },
+    "override": {
+      "description": "Flag for overriding existing special field",
+      "example": true,
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "tab",
+    "label",
+    "type"
+  ]
+}

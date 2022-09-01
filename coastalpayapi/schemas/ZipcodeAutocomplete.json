@@ -1,0 +1,32 @@
+{
+  "id": "ZipcodeAutocomplete",
+  "title": "ZipcodeAutocomplete",
+  "description": "ZIP Code autofill properties",
+  "type": "object",
+  "properties": {
+    "city": {
+      "description": "City fields",
+      "example": {
+        "1": 1,
+        "2": 2
+      },
+      "type": "object"
+    },
+    "state": {
+      "description": "State fields",
+      "example": {
+        "1": 1,
+        "2": 2
+      },
+      "type": "object"
+    },
+    "zipcode": {
+      "description": "Zipcode fields",
+      "example": {
+        "1": 1,
+        "2": 2
+      },
+      "type": "object"
+    }
+  }
+}

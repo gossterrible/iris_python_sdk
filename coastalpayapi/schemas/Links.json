@@ -1,0 +1,23 @@
+{
+  "id": "Links",
+  "title": "Links",
+  "type": "object",
+  "properties": {
+    "first": {
+      "description": "An URL to the first page of the data set",
+      "type": "string"
+    },
+    "last": {
+      "description": "An URL to the last page of the data set",
+      "type": "string"
+    },
+    "prev": {
+      "description": "An URL to the previous page of the data set",
+      "type": "string"
+    },
+    "next": {
+      "description": "An URL to the next page of the data set",
+      "type": "string"
+    }
+  }
+}

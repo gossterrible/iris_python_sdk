@@ -1,0 +1,95 @@
+{
+  "id": "LeadAppointment",
+  "title": "LeadAppointment",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Appointment Id",
+      "type": "integer",
+      "format": "int32"
+    },
+    "user": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "set_for": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "set_at": {
+      "description": "Appointment creation date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "set_by": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "modified": {
+      "description": "Appointment modification date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "modified_by": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "text": {
+      "description": "Appointment description",
+      "type": "string"
+    },
+    "date": {
+      "description": "Appointment date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "date_end": {
+      "description": "Appointment end date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-02T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "done": {
+      "allOf": [
+        {
+          "$ref": "Done.json"
+        },
+        {
+          "description": "Is appointment done?",
+          "example": "No"
+        }
+      ]
+    },
+    "confirmed": {
+      "description": "Appointment confirmed date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "confirmed_by": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "seen": {
+      "description": "Appointment seen date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "seen_by": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "rescheduled": {
+      "description": "Appointment rescheduled date and time in format ISO 8601 (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "rescheduled_by": {
+      "$ref": "BriefUserInfo.json"
+    },
+    "rescheduled_count": {
+      "example": 0,
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

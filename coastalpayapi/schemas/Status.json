@@ -1,0 +1,20 @@
+{
+  "title": "Status",
+  "description": "Status of link",
+  "example": "Linked",
+  "x-enum-elements": [
+    {
+      "name": "Linked",
+      "description": ""
+    },
+    {
+      "name": "Unlinked",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "Linked",
+    "Unlinked"
+  ]
+}

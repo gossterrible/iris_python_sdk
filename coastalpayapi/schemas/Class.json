@@ -1,0 +1,35 @@
+{
+  "title": "Class",
+  "description": "Tab class",
+  "example": "documents",
+  "x-enum-elements": [
+    {
+      "name": "Enum_  empty string for TAB",
+      "description": ""
+    },
+    {
+      "name": "set",
+      "description": ""
+    },
+    {
+      "name": "documents",
+      "description": ""
+    },
+    {
+      "name": "altdocs",
+      "description": ""
+    },
+    {
+      "name": "notes",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "' - empty string for TAB",
+    "set",
+    "documents",
+    "altdocs",
+    "notes"
+  ]
+}

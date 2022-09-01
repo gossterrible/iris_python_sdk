@@ -1,0 +1,47 @@
+{
+  "id": "StatusActivity",
+  "title": "StatusActivity",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Activity Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "changedBy": {
+      "description": "User Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "changedAt": {
+      "description": "Deleted date (Y-m-d\\TH:i:sP)",
+      "example": "2019-01-01T12:04:40+05:00",
+      "type": "string",
+      "format": "date-time"
+    },
+    "oldStatus": {
+      "description": "Old status",
+      "example": "Old",
+      "type": "string"
+    },
+    "old_status_id": {
+      "description": "Old Status Id",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "newStatus": {
+      "description": "New status",
+      "example": "New",
+      "type": "string"
+    },
+    "new_status_id": {
+      "description": "New Status Id",
+      "example": 2,
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

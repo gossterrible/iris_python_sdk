@@ -1,0 +1,16 @@
+{
+  "id": "BriefSmsTemplate",
+  "title": "BriefSmsTemplate",
+  "type": "object",
+  "properties": {
+    "id": {
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "title": {
+      "example": "SMS template title",
+      "type": "string"
+    }
+  }
+}

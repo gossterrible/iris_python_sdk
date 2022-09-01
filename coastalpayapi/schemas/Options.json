@@ -1,0 +1,86 @@
+{
+  "id": "Options",
+  "title": "Options",
+  "type": "object",
+  "properties": {
+    "dropdown": {
+      "allOf": [
+        {
+          "$ref": "Dropdown.json"
+        },
+        {
+          "description": "Add new list item"
+        }
+      ]
+    },
+    "dupecheck": {
+      "description": "Enable dupecheck",
+      "example": true,
+      "type": "boolean"
+    },
+    "contactid": {
+      "description": "Id of contact field",
+      "example": "1",
+      "type": "string"
+    },
+    "mask": {
+      "allOf": [
+        {
+          "$ref": "Mask.json"
+        },
+        {
+          "description": "Field mask"
+        }
+      ]
+    },
+    "copy": {
+      "allOf": [
+        {
+          "$ref": "Copy.json"
+        },
+        {
+          "description": "Copy button properties"
+        }
+      ]
+    },
+    "hyperlink": {
+      "description": "Enable hyperlink",
+      "example": true,
+      "type": "boolean"
+    },
+    "sms": {
+      "description": "Enable SMS",
+      "example": true,
+      "type": "boolean"
+    },
+    "dialer": {
+      "description": "Enable dialer",
+      "example": true,
+      "type": "boolean"
+    },
+    "googlemaps": {
+      "description": "Google Maps search properties",
+      "example": {
+        "1": 1,
+        "2": 2
+      },
+      "type": "object"
+    },
+    "zip_code_field": {
+      "description": "Zip code field ID for TimeZone field only",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "zipcode_autocomplete": {
+      "allOf": [
+        {
+          "$ref": "ZipcodeAutocomplete.json"
+        },
+        {
+          "description": "ZIP Code autofill properties"
+        }
+      ]
+    }
+  }
+}

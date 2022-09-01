@@ -1,0 +1,50 @@
+{
+  "title": "Alignment",
+  "description": "Field alignment",
+  "example": "left",
+  "x-enum-elements": [
+    {
+      "name": "left",
+      "description": ""
+    },
+    {
+      "name": "middle",
+      "description": ""
+    },
+    {
+      "name": "right",
+      "description": ""
+    },
+    {
+      "name": "left_column",
+      "description": ""
+    },
+    {
+      "name": "right_column",
+      "description": ""
+    },
+    {
+      "name": "float_left_whole_row",
+      "description": ""
+    },
+    {
+      "name": "float_left",
+      "description": ""
+    },
+    {
+      "name": "float_middle",
+      "description": ""
+    }
+  ],
+  "type": "string",
+  "enum": [
+    "left",
+    "middle",
+    "right",
+    "left_column",
+    "right_column",
+    "float_left_whole_row",
+    "float_left",
+    "float_middle"
+  ]
+}

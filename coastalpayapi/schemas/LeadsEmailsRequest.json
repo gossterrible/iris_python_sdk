@@ -1,0 +1,17 @@
+{
+  "id": "LeadsEmailsRequest",
+  "title": "LeadsEmailsRequest",
+  "type": "object",
+  "properties": {
+    "fieldId": {
+      "description": "Lead Field Id with email address",
+      "example": 1,
+      "type": "integer",
+      "format": "int32"
+    },
+    "placeholders": {
+      "description": "Object with template placeholders",
+      "type": "object"
+    }
+  }
+}
