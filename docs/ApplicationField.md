@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **to** | **str** | Name of mapped field | [optional] 
 **to_alt** | **str** | Alt of mapped field | [optional] 
 **to_type** | **str** | Type of mapped field | [optional] 
-**special** | **str** | Special type of mapped field | [optional] 
+**special** | **str** | Special type of mapped field | [optional]  if omitted the server will use the default value of "null"
 **info** | [**[ApplicationFieldInfoInner]**](ApplicationFieldInfoInner.md) |  | [optional] [readonly] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
