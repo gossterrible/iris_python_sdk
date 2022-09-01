@@ -129,16 +129,16 @@ class LeadFieldTab(ModelNormal):
 
     @classmethod
     @convert_js_args_to_python_args
-    def _from_openapi_data(cls, position, _class, name, order, *args, **kwargs):  # noqa: E501
+    def _from_openapi_data(cls, _class, name, order, *args, **kwargs):  # noqa: E501
         """LeadFieldTab - a model defined in OpenAPI
 
         Args:
-            position (int): Tab position
             _class (str): Tab class
             name (str): Tab class
             order (int): Tab order
 
         Keyword Args:
+            position (int): Tab position. defaults to 1, must be one of [1, 2, 3, 4, ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.
@@ -173,6 +173,7 @@ class LeadFieldTab(ModelNormal):
             active (int): Active tab. [optional]  # noqa: E501
         """
 
+        position = kwargs.get('position', 1)
         _check_type = kwargs.pop('_check_type', True)
         _spec_property_naming = kwargs.pop('_spec_property_naming', True)
         _path_to_item = kwargs.pop('_path_to_item', ())
@@ -226,16 +227,16 @@ class LeadFieldTab(ModelNormal):
     ])
 
     @convert_js_args_to_python_args
-    def __init__(self, position, _class, name, order, *args, **kwargs):  # noqa: E501
+    def __init__(self, _class, name, order, *args, **kwargs):  # noqa: E501
         """LeadFieldTab - a model defined in OpenAPI
 
         Args:
-            position (int): Tab position
             _class (str): Tab class
             name (str): Tab class
             order (int): Tab order
 
         Keyword Args:
+            position (int): Tab position. defaults to 1, must be one of [1, 2, 3, 4, ]  # noqa: E501
             _check_type (bool): if True, values for parameters in openapi_types
                                 will be type checked and a TypeError will be
                                 raised if the wrong type is input.
@@ -270,6 +271,7 @@ class LeadFieldTab(ModelNormal):
             active (int): Active tab. [optional]  # noqa: E501
         """
 
+        position = kwargs.get('position', 1)
         _check_type = kwargs.pop('_check_type', True)
         _spec_property_naming = kwargs.pop('_spec_property_naming', False)
         _path_to_item = kwargs.pop('_path_to_item', ())
